@@ -5,6 +5,10 @@ import AboutUsSection from "../components/Aboutus";
 import Header from "../components/Header";
 import ScrollToTopButton from "../components/ScrollToTopButton";
 import AutoScrollCarousel from "../components/AutoScrollCarousel";
+import Services from "../components/Services";
+import Users from "../components/Users";
+import Aboutme from "../components/Aboutme";
+import Contactus from "../components/Contactus";
 
 
 const HomeScreen = () => {
@@ -14,7 +18,11 @@ const HomeScreen = () => {
     <StatsSection/>
     <ServicesSection/>
     <AboutUsSection/>
-    <AutoScrollCarousel/>
+    <Services/>
+    <Users/>
+    <Aboutme/>
+    <Contactus/>
+    {/* <AutoScrollCarousel/> */}
     <ScrollToTopButton/>
     </div>
     );

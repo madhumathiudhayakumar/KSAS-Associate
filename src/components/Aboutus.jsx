@@ -18,10 +18,11 @@ const AboutUsSection = () => {
           <div>
             <h2 className="text-3xl md:text-4xl font-bold mb-6">About Us</h2>
             <p className="text-gray-300 leading-relaxed mb-6">
-              Fin and Me Wealth Partners LLP is a limited liability partnership
-              firm registered with the Ministry of Corporate Affairs, India. We
-              are here to help you achieve Financial Independence and Time
-              Freedom.
+            At Ebony Wealth Management, we are dedicated to helping you build a healthy and mindful 
+            relationship with money. Our comprehensive services cover end-to-end money management and 
+            investment solutions designed to help you spend wisely, save strategically, 
+            and invest purposefully. Acting as your lifelong partner in financial growth, 
+            we guide you on the journey towards financial independence and long-term wealth creation.
             </p>
             <button className="border border-[#af8a4a] text-[#af8a4a] hover:bg-[#af8a4a] hover:text-black px-6 py-2 rounded-full font-semibold transition">
               ABOUT US →
@@ -57,7 +58,7 @@ const AboutUsSection = () => {
             </div>
 
             {/* Overview */}
-            <div>
+            {/* <div>
               <div className="flex items-center gap-3 mb-2">
                 <ClipboardDocumentListIcon className="w-6 h-6 text-[#af8a4a]" />
                 <h3 className="font-semibold text-lg">Overview</h3>
@@ -66,7 +67,7 @@ const AboutUsSection = () => {
                 <li>AMFI-registered MFDs (ARN: 194729)</li>
                 <li>SEBI NISM V-A Certified</li>
               </ul>
-            </div>
+            </div> */}
 
             {/* Our Solution */}
             <div>

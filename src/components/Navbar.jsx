@@ -9,7 +9,7 @@ const Navbar = () => {
     { name: "Home", href: "#" },
     { name: "About Us", href: "#" },
     { name: "Services", href: "#" },
-    { name: "Blog", href: "#" },
+    { name: "About Me", href: "#" },
     { name: "Contact", href: "#" },
   ];
 
@@ -20,7 +20,7 @@ const Navbar = () => {
           {/* Logo Section */}
           <div className="flex items-center gap-2">
             <div className="bg-black text-white font-bold text-sm lg:text-base px-3 py-1 rounded-full">
-              KSAS Associate
+             EBONY  
             </div>
           </div>
 

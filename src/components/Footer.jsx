@@ -3,12 +3,12 @@ import { FaFacebookF, FaTwitter, FaInstagram } from "react-icons/fa";
 
 const Footer = () => {
   return (
-    <footer className="bg-[#444] text-gray-300 pt-10">
+    <footer className="bg-[#444] text-gray-300 pt-10 mt-15">
       <div className="bg-[#444] max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
         <div className="flex justify-center mb-6">
           <div className="flex flex-col items-center">
             <div className="bg-black border-2 border-[#af8a4a] rounded-full w-30 h-30 flex items-center justify-center">
-              <span className="text-[#af8a4a] font-bold text-lg">KSAS ASSOCIATE</span>
+              <span className="text-[#af8a4a] font-bold text-lg">EBONY</span>
             </div>
           </div>
         </div>
