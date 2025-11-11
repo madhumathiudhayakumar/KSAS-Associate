@@ -5,7 +5,7 @@ const Aboutme = () => {
     <section className="py-16 bg-white">
       {/* Heading */}
       <div className="text-center px-6">
-        <h2 className="text-2xl md:text-4xl font-extrabold text-black">
+        <h2 className="text-2xl md:text-4xl font-bold text-black">
           ABOUT ME
         </h2>
 

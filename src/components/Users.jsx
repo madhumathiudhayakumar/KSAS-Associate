@@ -46,7 +46,7 @@ const testimonials = [
 const Users = () => {
   return (
     <section className="bg-black py-16">
-      <h2 className="text-center text-white text-2xl md:text-3xl font-bold">
+      <h2 className="text-center text-white text-2xl md:text-4xl font-bold">
         TESTIMONIALS
       </h2>
 

@@ -4,7 +4,7 @@ import bannerImage from "../assets/banner-image.jpg"; // Ensure you have the ima
 const Header = () => {
   return (
           <section
-      className="relative bg-cover bg-center bg-no-repeat min-h-screen flex items-center justify-center px-6 md:px-12 mt-10"
+      className="relative bg-cover bg-center bg-no-repeat min-h-screen flex items-center justify-center px-6 md:px-12 "
       style={{
         backgroundImage: `url(${bannerImage})`}}
     >

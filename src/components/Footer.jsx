@@ -14,9 +14,9 @@ const Footer = () => {
         </div>
 
         <ul className="flex flex-wrap justify-center gap-6 text-sm sm:text-base mb-8">
-          <li><a href="#" className="hover:text-[#af8a4a]">Home</a></li>
-          <li><a href="#" className="hover:text-[#af8a4a]">About us</a></li>
-          <li><a href="#" className="hover:text-[#af8a4a]">Services</a></li>
+          <li><a href="#header" className="hover:text-[#af8a4a]">Home</a></li>
+          <li><a href="#aboutus" className="hover:text-[#af8a4a]">About us</a></li>
+          <li><a href="#services" className="hover:text-[#af8a4a]">Services</a></li>
           <li><a href="#" className="hover:text-[#af8a4a]">Privacy policy</a></li>
           <li><a href="#" className="hover:text-[#af8a4a]">Commission Disclosures</a></li>
         </ul>

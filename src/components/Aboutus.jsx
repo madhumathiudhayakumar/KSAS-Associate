@@ -16,7 +16,7 @@ const AboutUsSection = () => {
         <div className="grid md:grid-cols-2 gap-12 mb-12">
           {/* About Us Text */}
           <div>
-            <h2 className="text-3xl md:text-4xl font-bold mb-6">About Us</h2>
+            <h2 className="text-2xl md:text-4xl font-bold mb-6">About Us</h2>
             <p className="text-gray-300 leading-relaxed mb-6">
             At Ebony Wealth Management, we are dedicated to helping you build a healthy and mindful 
             relationship with money. Our comprehensive services cover end-to-end money management and 

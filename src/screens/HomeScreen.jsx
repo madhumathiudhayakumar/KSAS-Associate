@@ -4,25 +4,36 @@ import ServicesSection from "../components/ServicesSection";
 import AboutUsSection from "../components/Aboutus";
 import Header from "../components/Header";
 import ScrollToTopButton from "../components/ScrollToTopButton";
-import AutoScrollCarousel from "../components/AutoScrollCarousel";
 import Services from "../components/Services";
 import Users from "../components/Users";
 import Aboutme from "../components/Aboutme";
 import Contactus from "../components/Contactus";
+import AutoScrollHeader from "../components/AutoScrollHeader";
 
 
 const HomeScreen = () => {
   return (
     <div> 
+      <section id="header" className="scroll-mt-28">
     <Header/>
+    </section>
+    <section id="stats">
     <StatsSection/>
+    </section>
     <ServicesSection/>
+    <section id="aboutus" className="scroll-mt-24">
     <AboutUsSection/>
+    </section>
+    <section id="services" className="scroll-mt-24">
     <Services/>
+    </section>
     <Users/>
+    <section id="aboutme" className="scroll-mt-24">
     <Aboutme/>
+    </section>
+    <section id="contactus" className="scroll-mt-24">
     <Contactus/>
-    {/* <AutoScrollCarousel/> */}
+    </section>
     <ScrollToTopButton/>
     </div>
     );
