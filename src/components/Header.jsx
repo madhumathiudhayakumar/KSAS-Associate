@@ -3,10 +3,11 @@ import bannerImage from "../assets/banner-image.jpg"; // Ensure you have the ima
 
 const Header = () => {
   return (
-          <section
+    <section
       className="relative bg-cover bg-center bg-no-repeat min-h-screen flex items-center justify-center px-6 md:px-12 "
       style={{
-        backgroundImage: `url(${bannerImage})`}}
+        backgroundImage: `url(${bannerImage})`
+      }}
     >
       {/* Overlay for dark tint */}
       <div className="absolute inset-0 bg-black/60"></div>
@@ -20,7 +21,7 @@ const Header = () => {
           Get Started
         </button>
       </div>
-    </section> 
+    </section>
   )
 }
 export default Header

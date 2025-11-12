@@ -18,15 +18,15 @@ const AboutUsSection = () => {
           <div>
             <h2 className="text-2xl md:text-4xl font-bold mb-6">About Us</h2>
             <p className="text-gray-300 leading-relaxed mb-6">
-            At Ebony Wealth Management, we are dedicated to helping you build a healthy and mindful 
-            relationship with money. Our comprehensive services cover end-to-end money management and 
-            investment solutions designed to help you spend wisely, save strategically, 
-            and invest purposefully. Acting as your lifelong partner in financial growth, 
-            we guide you on the journey towards financial independence and long-term wealth creation.
+              At Ebony Wealth Management, we are dedicated to helping you build a healthy and mindful
+              relationship with money. Our comprehensive services cover end-to-end money management and
+              investment solutions designed to help you spend wisely, save strategically,
+              and invest purposefully. Acting as your lifelong partner in financial growth,
+              we guide you on the journey towards financial independence and long-term wealth creation.
             </p>
-            <button className="border border-[#af8a4a] text-[#af8a4a] hover:bg-[#af8a4a] hover:text-black px-6 py-2 rounded-full font-semibold transition">
+            {/* <button className="border border-[#af8a4a] text-[#af8a4a] hover:bg-[#af8a4a] hover:text-black px-6 py-2 rounded-full font-semibold transition">
               ABOUT US →
-            </button>
+            </button> */}
           </div>
 
           {/* Right Side Info Grid */}

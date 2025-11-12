@@ -9,33 +9,34 @@ import Users from "../components/Users";
 import Aboutme from "../components/Aboutme";
 import Contactus from "../components/Contactus";
 import AutoScrollHeader from "../components/AutoScrollHeader";
+import BooksCarousel from "../components/Users";
 
 
 const HomeScreen = () => {
   return (
-    <div> 
+    <div>
       <section id="header" className="scroll-mt-28">
-    <Header/>
-    </section>
-    <section id="stats">
-    <StatsSection/>
-    </section>
-    <ServicesSection/>
-    <section id="aboutus" className="scroll-mt-24">
-    <AboutUsSection/>
-    </section>
-    <section id="services" className="scroll-mt-24">
-    <Services/>
-    </section>
-    <Users/>
-    <section id="aboutme" className="scroll-mt-24">
-    <Aboutme/>
-    </section>
-    <section id="contactus" className="scroll-mt-24">
-    <Contactus/>
-    </section>
-    <ScrollToTopButton/>
+        <Header />
+      </section>
+      <section id="stats">
+        <StatsSection />
+      </section>
+      <ServicesSection />
+      <section id="aboutus" className="scroll-mt-24">
+        <AboutUsSection />
+      </section>
+      <section id="services" className="scroll-mt-24">
+        <Services />
+      </section>
+      <BooksCarousel />
+      <section id="aboutme" className="scroll-mt-24">
+        <Aboutme />
+      </section>
+      <section id="contactus" className="scroll-mt-24">
+        <Contactus />
+      </section>
+      <ScrollToTopButton />
     </div>
-    );
+  );
 };
 export default HomeScreen;

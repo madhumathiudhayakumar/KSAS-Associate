@@ -2,15 +2,15 @@ import React, { useState } from "react";
 import ContactImage from "../assets/contactus.jpg";
 
 const Contactus = () => {
-  const [contactData,setContactData] = useState({})
+  const [contactData, setContactData] = useState({})
 
   const handleChange = (e) => {
-    setContactData({...contactData,[e.target.name]:e.target.value})
+    setContactData({ ...contactData, [e.target.name]: e.target.value })
   }
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    console.log(contactData,"Submitted Contact Data");
+    console.log(contactData, "Submitted Contact Data");
   }
 
   return (
@@ -114,3 +114,5 @@ const Contactus = () => {
 };
 
 export default Contactus;
+
+// service_x20q5uj

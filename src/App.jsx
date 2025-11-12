@@ -1,24 +1,25 @@
 import './App.css'
-import AutoScrollHeader from './components/AutoScrollHeader'
-import Footer from './components/Footer'
-import Navbar from './components/Navbar'
-import HomeScreen from './screens/HomeScreen'
+import AppRoutes from './AppRoutes/AppRoutes'
+// import AutoScrollHeader from './components/AutoScrollHeader'
+// import Footer from './components/Footer'
+// import Navbar from './components/Navbar'
+// import HomeScreen from './screens/HomeScreen'
 
 function App() {
 
   return (
     <>
-       <div className="flex flex-col min-h-screen">
+    <AppRoutes/>
+      {/* <div className="flex flex-col min-h-screen">
 
-      <Navbar />
-      
-      {/* Page Content */}
-      <main className="flex-grow mt-16">
-        <HomeScreen/>
-      </main>
+        <Navbar />
 
-      <Footer />
-    </div>
+        <main className="flex-grow mt-16">
+          <HomeScreen />
+        </main>
+
+        <Footer />
+      </div> */}
     </>
   )
 }

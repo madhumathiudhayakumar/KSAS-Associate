@@ -1,14 +1,14 @@
 import React from "react";
-import { FaBuffer,FaSuitcase,FaSearch   } from "react-icons/fa";
+import { FaBuffer, FaSuitcase, FaSearch } from "react-icons/fa";
 import { IoStatsChart } from "react-icons/io5";
-import { BiSolidVideoRecording,BiAnalyse  } from "react-icons/bi";
+import { BiSolidVideoRecording, BiAnalyse } from "react-icons/bi";
 
 const services = [
-  { name: "Expense Analytics", icon: <FaBuffer/> },
+  { name: "Expense Analytics", icon: <FaBuffer /> },
   { name: "MF Portfolio Analysis", icon: <BiAnalyse /> },
-  { name: "Budgeting Assistance", icon: <IoStatsChart/> },
-  { name: "Goal-based MF Investing", icon: <FaSuitcase/> },
-  { name: "Asset Allocation", icon: <BiSolidVideoRecording/> },
+  { name: "Budgeting Assistance", icon: <IoStatsChart /> },
+  { name: "Goal-based MF Investing", icon: <FaSuitcase /> },
+  { name: "Asset Allocation", icon: <BiSolidVideoRecording /> },
   { name: "Portfolio Rebalancing", icon: <FaSearch /> },
 ];
 
