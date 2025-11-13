@@ -24,7 +24,8 @@ const [rateData, setRateData] = useState([]);
   },[])
 
   return (
-    <div className="w-full bg-black text-white py-2 overflow-hidden">
+    <div className="w-full bg-[var(--brand-dark)] text-[var(--brand-light)] py-2 overflow-hidden">
+      {rateData.length > 0 && (
       <Swiper
         modules={[Autoplay]}
         slidesPerView="auto"
@@ -49,7 +50,7 @@ const [rateData, setRateData] = useState([]);
   return (
     <SwiperSlide
       key={index}
-      className="!w-auto px-6 flex items-center border-r border-[#fff] h-full"
+      className="!w-auto px-6 flex items-center border-r border-[var(--brand-light)] h-full"
     >
       <div className="flex items-center gap-2 whitespace-nowrap">
         {/* Index name */}
@@ -82,6 +83,7 @@ const [rateData, setRateData] = useState([]);
 })}
 
       </Swiper>
+)}
     </div>
   );
 };

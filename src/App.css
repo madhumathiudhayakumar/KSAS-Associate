@@ -4,5 +4,12 @@ html {
 
 :root {
   font-family: "Open Sans", sans-serif;
-  color: #444444;
+  --brand-gold: #af8a4a;
+  --brand-light: #fff;
+  --brand-dark: #1a1a1a;
+  --brand-gold-dark: #856c38;
+  --brand-gray: #302f2f;
+  --brand-gray-dark: #202325;
+  --brand-gray-light: #D1D5DB;
+
 }

@@ -12,7 +12,7 @@ const services = [
   { name: "Portfolio Rebalancing", icon: <FaSearch /> },
 ];
 
-const ServicesSection = () => {
+const ServiceAnalyticSection = () => {
   return (
     <section className="py-12 ">
       <div className="container mx-auto px-6">
@@ -20,10 +20,10 @@ const ServicesSection = () => {
           {services.map((service, i) => (
             <div
               key={i}
-              className="relative bg-black text-white text-center pt-10 pb-6 rounded-xl shadow-md hover:bg-[#af8a4a] transition-all duration-300"
+              className="relative bg-[var(--brand-dark)] text-[var(--brand-light)] text-center pt-10 pb-6 rounded-xl shadow-md hover:bg-[var(--brand-gold)] transition-all duration-300"
             >
               {/* Floating Icon Circle */}
-              <div className="absolute -top-6 left-1/2 transform -translate-x-1/2 bg-[#fff] text-[#af8a4a] w-12 h-12 flex items-center justify-center rounded-full shadow-md text-2xl font-bold">
+              <div className="absolute -top-6 left-1/2 transform -translate-x-1/2 bg-[var(--brand-light)] text-[var(--brand-gold)] w-12 h-12 flex items-center justify-center rounded-full shadow-md text-2xl font-bold">
                 {service.icon}
               </div>
 
@@ -38,4 +38,4 @@ const ServicesSection = () => {
   );
 };
 
-export default ServicesSection;
+export default ServiceAnalyticSection;

@@ -1,15 +1,13 @@
 import React from "react";
 import StatsSection from "../components/StatsSection";
-import ServicesSection from "../components/ServicesSection";
 import AboutUsSection from "../components/Aboutus";
 import Header from "../components/Header";
 import ScrollToTopButton from "../components/ScrollToTopButton";
 import Services from "../components/Services";
-import Users from "../components/Users";
 import Aboutme from "../components/Aboutme";
 import Contactus from "../components/Contactus";
-import AutoScrollHeader from "../components/AutoScrollHeader";
-import BooksCarousel from "../components/Users";
+import BooksCarousel from "../components/BooksCarousel";
+import ServiceAnalyticSection from "../components/ServiceAnalyticSection";
 
 
 const HomeScreen = () => {
@@ -21,7 +19,7 @@ const HomeScreen = () => {
       <section id="stats">
         <StatsSection />
       </section>
-      <ServicesSection />
+      <ServiceAnalyticSection />
       <section id="aboutus" className="scroll-mt-24">
         <AboutUsSection />
       </section>
