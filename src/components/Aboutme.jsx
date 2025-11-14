@@ -15,16 +15,17 @@ const Aboutme = () => {
           <div className="mx-auto text-left space-y-4">
 
             <p className="text-md text-[var(--brand-dark)] leading-relaxed text-left">
-              With over 15 years of experience in the field of money management, I specialize in helping individuals
-              and families achieve financial stability and growth. My expertise covers a wide range of investment and
-              protection solutions, including intraday trading, term insurance,
-              health insurance, mutual funds, bonds, fixed deposits, gold investments, and real estate planning.
+              With over <span className="font-semibold text-[var(--brand-dark)]">15 years of experience</span> in the field of <span>money management,</span> I specialize in helping
+              individuals and families achieve financial stability and growth. My expertise covers a
+              wide range of investment and protection solutions, including <span className="font-semibold text-[var(--brand-dark)]">intraday trading,
+                term insurance, health insurance, mutual funds, bonds, fixed deposits, gold investments,</span>
+              and <span className="font-semibold text-[var(--brand-dark)]">real estate planning.</span>
             </p>
 
             <p className="text-md text-[var(--brand-dark)] leading-relaxed text-left">
-              I believe in a balanced approach to wealth creation—focusing on both risk management and
-              long-term growth. My goal is to provide clear, practical, and personalized financial strategies that help
-              clients make informed decisions and build a secure financial future.
+              I believe in a balanced approach to wealth creation—focusing on both <span className="font-semibold text-[var(--brand-dark)]">risk management
+                and long-term growth.</span> My goal is to provide clear, practical, and personalized financial
+              strategies that help clients make informed decisions and build a secure financial future.
             </p>
           </div>
         </div>

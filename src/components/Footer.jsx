@@ -69,11 +69,11 @@ const Footer = () => {
         <div className="px-4 md:px-8 pb-8">
           <div className="mx-auto text-left space-y-4">
             <p className="font-semibold text-[var(--brand-light)] text-left">
-              Ebony is an AMFI Registered Mutual Fund Distributor.
+              <span className="font-semibold text-[var(--brand-light)]">Ebony</span> is an AMFI Registered Mutual Fund Distributor.
             </p>
 
             <p className="text-sm text-[var(--brand-gray-light)] leading-relaxed text-left">
-              Disclaimer: Mutual fund investments are subject to market risks. Please read
+              <span className="font-semibold text-[var(--brand-light)]">Disclaimer:</span> Mutual fund investments are subject to market risks. Please read
               the scheme information and other related documents carefully before investing.
               Past performance is not indicative of future returns. Please consider your
               specific investment requirements before choosing a fund, or designing a
@@ -81,8 +81,8 @@ const Footer = () => {
             </p>
 
             <p className="text-sm text-[var(--brand-gray-light)] leading-relaxed text-left">
-              Ebony makes no warranties or representations, express
-              or implied, on products offered through the platform of Ebony.
+              <span className="font-semibold text-[var(--brand-light)]">Ebony</span> makes no warranties or representations, express
+              or implied, on products offered through the platform of <span className="font-semibold text-[var(--brand-light)]">Ebony.</span>
               It accepts no liability for any damages or losses, however
               caused, in connection with the use of, or on the reliance of its product or
               related services. Terms and conditions of the website are applicable.
@@ -101,7 +101,7 @@ const Footer = () => {
             />
           </div>
 
-          <p className=" text-sm text-center mt-1">AMFI Registered ARN - 194729</p>
+          {/* <p className=" text-sm text-center mt-1">AMFI Registered ARN - 194729</p> */}
 
           <div className="bg-[var(--brand-light)] p-2 rounded">
             <img

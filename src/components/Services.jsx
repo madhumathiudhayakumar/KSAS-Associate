@@ -33,18 +33,17 @@ const Services = () => {
           <ul className="space-y-3 text-[var(--brand-light)] leading-relaxed text-base">
             <li className="flex gap-3">
               <BsSunFill className="text-[var(--brand-gold)] mt-1 flex-shrink-0" />
-              Monthly Budgeting Assistance: Helping you save more while spending mindfully.
-            </li>
+              Monthly Budgeting Assistance: Helping you save more while spending mindfully.            </li>
 
             <li className="flex gap-3">
               <BsSunFill className="text-[var(--brand-gold)] mt-1 flex-shrink-0" />
-              Financial Health Checks: Offering spend analytics to understand your current financial standing.
-            </li>
+              Financial Health Checks: Offering spend analytics to understand your current 
+              financial standing.            </li>
 
             <li className="flex gap-3">
               <BsSunFill className="text-[var(--brand-gold)] mt-1 flex-shrink-0" />
-              Debt Guidance: Assisting you in managing costly loans and focusing on increasing your savings.
-            </li>
+              Debt Guidance: Assisting you in managing costly loans and focusing on increasing your 
+              savings.            </li>
           </ul>
         </div>
 
@@ -58,14 +57,14 @@ const Services = () => {
           <ul className="space-y-3 text-[var(--brand-light)] leading-relaxed text-base">
             <li className="flex gap-3">
               <BsSunFill className="text-[var(--brand-gold)] mt-1 flex-shrink-0" />
-              Goal-Based Investing: Planning investments to achieve financial milestones such as retirement,
-              children’s education or weddings, and wealth building for long-term abundance.
+              Goal-Based Investing: Planning investments to achieve financial milestones such 
+              as retirement, children’s education or weddings, and wealth building for long-term abundance.
             </li>
 
             <li className="flex gap-3">
               <BsSunFill className="text-[var(--brand-gold)] mt-1 flex-shrink-0" />
-              Risk Management: Prioritizing investment risk mitigation over mere high returns by maintaining
-              proper asset allocation and periodic portfolio rebalancing.
+              Risk Management: Prioritizing investment risk mitigation over mere high returns by 
+              maintaining proper asset allocation and periodic portfolio rebalancing.
             </li>
           </ul>
         </div>

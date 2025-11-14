@@ -8,19 +8,21 @@ import { Link, useLocation, useNavigate } from "react-router-dom";
 const Navbar = () => {
   const location = useLocation()
   const navigate = useNavigate();
-  const currentHash = location.hash || "#header";
-    const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const currentHash = location.hash || (location.pathname === "/" ? "#header" : "");
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
+
+  console.log("Current Hash:", location.hash, location.pathname, currentHash);
 
   const navLinks = [
     { name: "Home", href: "#header" },
     { name: "About Us", href: "#aboutus" },
     { name: "Services", href: "#services" },
     { name: "About Me", href: "#aboutme" },
-    { name: "Terms & Conditions", href: "#contactus" },
+    { name: "Terms & Conditions", href: "/terms-condition" },
     { name: "Contact Us", href: "#contactus" },
   ];
   const handleNavClick = (href) => {
-    if(isMenuOpen){
+    if (isMenuOpen) {
       setIsMenuOpen(false);
     }
     if (location.pathname === "/") {
@@ -43,7 +45,7 @@ const Navbar = () => {
   return (
     <>
       <nav className="w-full bg-[var(--brand-light)] shadow-sm  top-0 left-0 z-50">
-        {location?.pathname !== "/privacy-policy" && <AutoScrollHeader />}
+        {location?.pathname !== "/privacy-policy" && location?.pathname !== "/terms-condition" && <AutoScrollHeader />}
         <div className="max-w-7xl mx-auto flex items-center justify-between px-4 sm:px-6 md:px-10 py-3 md:py-4">
           {/* Logo Section */}
           {/* <div className="flex items-center gap-2">
@@ -61,22 +63,27 @@ const Navbar = () => {
           {/* Desktop Nav Links */}
           <ul className="hidden md:flex items-center space-x-6 lg:space-x-10 text-[var(--brand-dark)] font-medium text-sm lg:text-base">
             {navLinks.map((link) => {
-                   const isActive = currentHash === link.href;   
-            console.log("isActive", isActive, currentHash, link.href);
-            return (
-              <li key={link.name}>
-                <Link to={`/${link.href}`} onClick={() => handleNavClick(link.href)} 
-                className={`transition-colors duration-200 ${
-                  isActive ? "text-[var(--brand-gold)] font-semibold" : "hover:text-[var(--brand-gold-dark)]"
-                }`}>
-                  {link.name}</Link>
-                {/* <a
+              const isSectionLink = link.href.startsWith("#");
+
+              const isActive = isSectionLink
+                ? currentHash === link.href          // highlight for home/sections
+                : location.pathname === link.href;
+              console.log("isActive", isSectionLink, isActive, currentHash, link.href);
+              return (
+                <li key={link.name}>
+                  <Link to={isSectionLink ? "/" : link.href}
+                    onClick={() => handleNavClick(link.href)}
+                    className={`transition-colors duration-200 ${isActive ? "text-[var(--brand-gold)] font-semibold" : "hover:text-[var(--brand-gold-dark)]"
+                      }`}>
+                    {link.name}</Link>
+                  {/* <a
                   href={link.href}
                   className="hover:text-[#af8a4a] transition-colors duration-200"
                 > */}
-                {/* </a> */}
-              </li>
-            )})}
+                  {/* </a> */}
+                </li>
+              )
+            })}
             {/* <button className="bg-[#af8a4a] hover:bg-[#af8a4a] text-white font-semibold px-4 lg:px-6 py-2 rounded text-sm lg:text-base">
               Portfolio Login
             </button> */}
@@ -111,16 +118,20 @@ const Navbar = () => {
 
             {/* ✅ Menu Links */}
             <ul className="mt-8 space-y-6 text-[var(--brand-dark)] text-lg font-medium p-6">
-              {navLinks.map((link) =>{
-                   const isActive = currentHash === link.href;   
-               return(
-                <li key={link.name}>
-                                  <Link to={`/${link.href}`} onClick={() => handleNavClick(link.href)} 
-                className={`transition-colors duration-200 ${
-                  isActive ? "text-[var(--brand-gold)] font-semibold" : "hover:text-[var(--brand-gold-dark)]"
-                }`}>
-                  {link.name}</Link>
-                  {/* <a
+              {navLinks.map((link) => {
+                const isSectionLink = link.href.startsWith("#");
+
+                const isActive = isSectionLink
+                  ? currentHash === link.href          // highlight for home/sections
+                  : location.pathname === link.href;
+                return (
+                  <li key={link.name}>
+                    <Link to={isSectionLink ? "/" : link.href}
+                      onClick={() => handleNavClick(link.href)}
+                      className={`transition-colors duration-200 ${isActive ? "text-[var(--brand-gold)] font-semibold" : "hover:text-[var(--brand-gold-dark)]"
+                        }`}>
+                      {link.name}</Link>
+                    {/* <a
                     href={link.href}
                     onClick={() => setIsMenuOpen(false)}
                        className={`transition-colors duration-200 ${
@@ -129,13 +140,12 @@ const Navbar = () => {
                   >
                     {link.name}
                   </a> */}
-                </li>
-              )})}
+                  </li>
+                )
+              })}
             </ul>
-
           </div>
         </div>
-
       )}
     </>
   );

@@ -3,6 +3,7 @@ import HomeScreen from "../screens/HomeScreen";
 import PrivacyPolicy from "../screens/PrivacyPolicy";
 import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
+import TermsAndCondition from "../screens/TermsAndConditions";
 
 const AppRoutes = () => {
   return (
@@ -12,6 +13,7 @@ const AppRoutes = () => {
         <Routes>
           {/* <main className="flex-grow mt-16"> */}
             <Route path="/" element={<HomeScreen/>} />
+             <Route path="/terms-condition" element={<TermsAndCondition />} /> 
             <Route path="/privacy-policy" element={<PrivacyPolicy />} />  
           {/* </main> */}
         </Routes>

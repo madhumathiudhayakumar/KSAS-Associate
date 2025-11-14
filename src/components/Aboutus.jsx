@@ -18,11 +18,11 @@ const AboutUsSection = () => {
           <div>
             <h2 className="text-2xl md:text-4xl font-bold mb-6">About Us</h2>
             <p className="text-[var(--brand-light)] leading-relaxed mb-6">
-              At Ebony Wealth Management, we are dedicated to helping you build a healthy and mindful
-              relationship with money. Our comprehensive services cover end-to-end money management and
-              investment solutions designed to help you spend wisely, save strategically,
-              and invest purposefully. Acting as your lifelong partner in financial growth,
-              we guide you on the journey towards financial independence and long-term wealth creation.
+            At <span className="text-[var(--brand-light)] font-semibold">Ebony Wealth Management,</span> we are dedicated to helping you build a healthy and mindful 
+            relationship with money. Our comprehensive services cover end-to-end money management and 
+            investment solutions designed to help you spend wisely, save strategically, and invest 
+            purposefully. Acting as your lifelong partner in financial growth, we guide you on the 
+            journey towards financial independence and long-term wealth creation.
             </p>
             {/* <button className="border border-[#af8a4a] text-[#af8a4a] hover:bg-[#af8a4a] hover:text-black px-6 py-2 rounded-full font-semibold transition">
               ABOUT US →
@@ -51,9 +51,9 @@ const AboutUsSection = () => {
                 <h3 className="font-semibold text-lg">Mission</h3>
               </div>
               <p className="text-[var(--brand-light)] text-sm leading-relaxed">
-                Our mission is to assist you with the right choice and mix of
-                investment products aligned to your financial goals, risk
-                appetite, and time horizons.
+                Our mission is to assist you with the right choice and mix of investment 
+                products relevant to your financial goals, aligned to your ability and necessity 
+                for risk, with proper porfolio-level risk and returns management
               </p>
             </div>
 
