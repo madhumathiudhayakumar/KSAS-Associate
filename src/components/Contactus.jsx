@@ -58,6 +58,9 @@ const Contactus = () => {
   return (
     <section id="contact" className="bg-[var(--brand-dark)] py-16">
       {/* Heading */}
+      <div data-aos="fade-down"
+     data-aos-easing="linear"
+     data-aos-duration="1500">
       <h2 className="text-center text-[var(--brand-light)] text-2xl md:text-4xl font-bold">
         CONTACT US
       </h2>
@@ -75,7 +78,8 @@ const Contactus = () => {
 
           <div className="bg-[var(--brand-light)] rounded-xl shadow-xl p-4 relative z-10">
             <img
-              src={ContactImage}
+              // src={ContactImage}
+              src="https://media.istockphoto.com/id/1468678659/photo/hands-documents-and-writing-with-a-woman-in-a-hospital-filling-out-an-application-or.webp?a=1&b=1&s=612x612&w=0&k=20&c=TYBooLa9qkKH6KzBhjgxClSOUhWg1G5xtbhKGyBgprE="
               alt="Contact"
               className="rounded-lg w-full h-125 object-cover"
             />
@@ -163,6 +167,7 @@ const Contactus = () => {
 
           </form>
         </div>
+      </div>
       </div>
     </section>
   );

@@ -13,7 +13,7 @@ import ServiceAnalyticSection from "../components/ServiceAnalyticSection";
 const HomeScreen = () => {
   return (
     <div>
-      <section id="header" className="scroll-mt-28">
+      <section id="header" className="scroll-mt-38">
         <Header />
       </section>
       <section id="stats">

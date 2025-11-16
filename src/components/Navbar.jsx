@@ -45,7 +45,8 @@ const Navbar = () => {
   return (
     <>
       <nav className="w-full bg-[var(--brand-light)] shadow-sm  top-0 left-0 z-50">
-        {location?.pathname !== "/privacy-policy" && location?.pathname !== "/terms-condition" && <AutoScrollHeader />}
+        {location?.pathname !== "/privacy-policy" && location?.pathname !== "/terms-condition" && location.pathname !== "/application-form"
+        && <AutoScrollHeader />}
         <div className="max-w-7xl mx-auto flex items-center justify-between px-4 sm:px-6 md:px-10 py-3 md:py-4">
           {/* Logo Section */}
           {/* <div className="flex items-center gap-2">
@@ -54,7 +55,8 @@ const Navbar = () => {
             <img
               src={logo}
               alt="Logo"
-              className="w-24 h-24 object-contain rounded-full p-2"
+              className="w-24 h-24 object-contain rounded-full p-2 cursor-pointer"
+              onClick={() => handleNavClick("#header")}
             />
           </div>
           {/* </div>

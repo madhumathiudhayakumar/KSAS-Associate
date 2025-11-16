@@ -6,7 +6,9 @@ const Services = () => {
   return (
     <section className="py-16 bg-[var(--brand-light)]">
       {/* Heading */}
-      <div className="text-center px-6">
+      <div data-aos="fade-down"
+     data-aos-easing="linear"
+     data-aos-duration="1500" className="text-center px-6">
         <h2 className="text-2xl md:text-4xl font-bold text-[var(--brand-dark)]">
           SERVICES
         </h2>
@@ -21,7 +23,9 @@ const Services = () => {
       </div>
 
       {/* Cards */}
-      <div className="container mx-auto mt-12 px-6 grid grid-cols-1 md:grid-cols-2 gap-8">
+      <div data-aos="fade-down"
+     data-aos-easing="linear"
+     data-aos-duration="1500" className="container mx-auto mt-12 px-6 grid grid-cols-1 md:grid-cols-2 gap-8">
 
         {/* Card 1 */}
         <div className="bg-[var(--brand-dark)] text-[var(--brand-light)] rounded-xl p-8 shadow-xl">

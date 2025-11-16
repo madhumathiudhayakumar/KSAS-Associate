@@ -43,7 +43,8 @@ const Footer = () => {
               <img
                 src={logo}
                 alt="Logo"
-                className="w-24 h-24 object-contain rounded-full"
+                className="w-24 h-24 object-contain rounded-full cursor-pointer"
+                onClick={() => handleNavClick("#header")}
               />
             </div>
           </div>

@@ -61,6 +61,9 @@ const BooksCarousel = () => {
   return (
     <section className="bg-[var(--brand-dark)] py-16">
       {/* Heading */}
+      <div data-aos="fade-down"
+     data-aos-easing="linear"
+     data-aos-duration="1500">
       <p className="text-center text-[var(--brand-light)] text-lg italic mb-6 px-4">
         “An investment in knowledge pays the best interest.” — Benjamin Franklin
       </p>
@@ -72,7 +75,7 @@ const BooksCarousel = () => {
       {/* Underline */}
       <div className="w-14 h-1 bg-[var(--brand-gold)] mx-auto mt-2 mb-10 rounded-full"></div>
 
-      <div className="container mx-auto px-4">
+      <div  className="container mx-auto px-4">
         <div className="relative pb-12">
           <Swiper
             modules={[Navigation, Pagination, Autoplay]}
@@ -126,6 +129,7 @@ const BooksCarousel = () => {
             }
           `}</style>
         </div>
+      </div>
       </div>
     </section>
   );
