@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import emailjs from '@emailjs/browser';
-import ContactImage from "../assets/contactus.jpg";
+import ContactImage from "../assets/contact-image.jpg";
 
 const Contactus = () => {
   const [contactData, setContactData] = useState({})
@@ -8,6 +8,7 @@ const Contactus = () => {
     mobile: "",
     email: "",
   })
+  const [showSuccessMessage, setShowSuccessMessage] = useState(false);
 
   const handleChange = (e) => {
     const { name, value } = e.target;
@@ -44,8 +45,12 @@ const Contactus = () => {
 
     emailjs.send(serviceID, templateID, templateParams, publicKey)
       .then((response) => {
-        alert("Email sent successfully!");
         console.log("SUCCESS!", response.status, response.text);
+        window.scrollTo(0, 0);
+        setShowSuccessMessage(true);
+        setTimeout(() => {
+          setShowSuccessMessage(false);
+        }, 5000);
         setContactData({});
       }, (err) => {
         alert("Failed to send message, please try again later.");
@@ -56,6 +61,14 @@ const Contactus = () => {
   }
 
   return (
+    <>
+{showSuccessMessage &&<div className="fixed top-10 left-1/2 
+                transform -translate-x-1/2 -translate-y-1/2
+                p-4 mb-4 text-sm text-green-800 rounded-lg bg-[var(--brand-light)] text-center shadow-lg z-50"
+     role="alert">
+  <span className="font-medium">Email sent successfully!</span> We’ve received your message and will get back to you soon.
+</div> }
+
     <section id="contact" className="bg-[var(--brand-dark)] py-16">
       {/* Heading */}
       <div data-aos="fade-down"
@@ -78,8 +91,7 @@ const Contactus = () => {
 
           <div className="bg-[var(--brand-light)] rounded-xl shadow-xl p-4 relative z-10">
             <img
-              // src={ContactImage}
-              src="https://media.istockphoto.com/id/1468678659/photo/hands-documents-and-writing-with-a-woman-in-a-hospital-filling-out-an-application-or.webp?a=1&b=1&s=612x612&w=0&k=20&c=TYBooLa9qkKH6KzBhjgxClSOUhWg1G5xtbhKGyBgprE="
+               src={ContactImage}
               alt="Contact"
               className="rounded-lg w-full h-125 object-cover"
             />
@@ -140,10 +152,9 @@ const Contactus = () => {
               className="w-full border border-gray-300 rounded-lg px-4 py-3 text-gray-500 focus:ring-[var(--brand-gold)] focus:border-[var(--brand-gold)] outline-none"
             >
               <option value="">Select Service</option>
-              <option>Money Management</option>
-              <option>Investment Planning</option>
-              <option>Retirement Planning</option>
-              <option>Mutual Funds</option>
+              <option>Mutual Fund</option>
+              <option>Financial Planner</option>
+              <option>Tax Planning</option>
             </select>
 
             {/* Message */}
@@ -170,6 +181,8 @@ const Contactus = () => {
       </div>
       </div>
     </section>
+        </>
+
   );
 };
 

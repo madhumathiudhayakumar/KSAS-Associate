@@ -70,30 +70,32 @@ const Footer = () => {
         <div className="px-4 md:px-8 pb-8">
           <div className="mx-auto text-left space-y-4">
             <p className="font-semibold text-[var(--brand-light)] text-left">
-              <span className="font-semibold text-[var(--brand-light)]">Ebony</span> is an AMFI Registered Mutual Fund Distributor.
+              <span className="font-semibold text-[var(--brand-light)]">Ebony Wealth Partner LLP </span> is an AMFI-registered Mutual Fund Distributor.
             </p>
 
             <p className="text-sm text-[var(--brand-gray-light)] leading-relaxed text-left">
-              <span className="font-semibold text-[var(--brand-light)]">Disclaimer:</span> Mutual fund investments are subject to market risks. Please read
-              the scheme information and other related documents carefully before investing.
-              Past performance is not indicative of future returns. Please consider your
-              specific investment requirements before choosing a fund, or designing a
-              portfolio that suits your needs.
+              <span className="font-semibold text-[var(--brand-light)]">Disclaimer:</span>  Mutual fund 
+              investments are subject to market risks. Investors are advised to read the scheme 
+              information documents and all related materials carefully before investing. 
+              Past performance does not guarantee future results. Please evaluate your individual
+              financial goals and risk tolerance before selecting a fund or creating an investment 
+              portfolio.
             </p>
 
             <p className="text-sm text-[var(--brand-gray-light)] leading-relaxed text-left">
-              <span className="font-semibold text-[var(--brand-light)]">Ebony</span> makes no warranties or representations, express
-              or implied, on products offered through the platform of <span className="font-semibold text-[var(--brand-light)]">Ebony.</span>
-              It accepts no liability for any damages or losses, however
-              caused, in connection with the use of, or on the reliance of its product or
-              related services. Terms and conditions of the website are applicable.
+              <span className="font-semibold text-[var(--brand-light)]">Ebony Wealth Partner LLP</span> makes no warranties or representations, expressed
+              or implied, regarding the products or services offered through its platform. 
+             The firm shall not be held liable for any loss or damage arising from the use of, or 
+             reliance on, any information, products, or related services provided. All website terms 
+             and conditions apply. Investments in securities markets are subject to market risks; 
+             please read all associated documents carefully before making any investment decisions.
             </p>
           </div>
         </div>
 
 
         {/* Logos */}
-        <div className="flex flex-col sm:flex-row justify-center items-center gap-8 mt-6">
+        {/* <div className="flex flex-col sm:flex-row justify-center items-center gap-8 mt-6">
           <div className="bg-[var(--brand-light)] p-2 rounded">
             <img
               src={amfilogo}
@@ -102,7 +104,7 @@ const Footer = () => {
             />
           </div>
 
-          {/* <p className=" text-sm text-center mt-1">AMFI Registered ARN - 194729</p> */}
+          <p className=" text-sm text-center mt-1">AMFI Registered ARN - 194729</p>
 
           <div className="bg-[var(--brand-light)] p-2 rounded">
             <img
@@ -111,7 +113,7 @@ const Footer = () => {
               className="h-12 object-contain"
             />
           </div>
-        </div>
+        </div> */}
       </div>
 
       {/* Bottom Bar */}
@@ -122,7 +124,7 @@ const Footer = () => {
             <p className="text-[var(--brand-gray-light)]">
               © Copyright 2025{" "}
               <span className="font-semibold text-[var(--brand-light)]">
-                Ebony.
+                Ebony Wealth Partners LLP —
               </span>{" "}
               All rights reserved.
             </p>

@@ -22,7 +22,7 @@ const ServiceAnalyticSection = () => {
           {services.map((service, i) => (
             <div
               key={i}
-              className="relative bg-[var(--brand-dark)] text-[var(--brand-light)] text-center pt-10 pb-6 rounded-xl shadow-md hover:bg-[var(--brand-gold)] transition-all duration-300"
+              className="relative bg-[var(--brand-dark)] text-[var(--brand-light)] text-center pt-10 pb-10 rounded-xl shadow-md hover:bg-[var(--brand-gold)] transition-all duration-300"
             >
               {/* Floating Icon Circle */}
               <div className="absolute -top-6 left-1/2 transform -translate-x-1/2 bg-[var(--brand-light)] text-[var(--brand-gold)] w-12 h-12 flex items-center justify-center rounded-full shadow-md text-2xl font-bold">

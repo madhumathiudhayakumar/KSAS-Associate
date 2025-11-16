@@ -41,7 +41,7 @@ const PrivacyPolicy = () => {
       </section> */}
 
         {/* ======= Main Content ======= */}
-        <section className="py-16 px-6 md:px-20 lg:px-32 bg-[var(--brand-dark)]">
+        <section className="py-16 px-6 md:px-20 lg:px-32 ">
           <div data-aos="fade-down"
      data-aos-easing="linear"
      data-aos-duration="1500"  className="max-w-5xl mx-auto bg-[var(--brand-light)] backdrop-blur-sm rounded-2xl shadow-[0_0_20px_rgba(0,0,0,0.2)] p-8 md:p-12 leading-relaxed">

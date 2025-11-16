@@ -8,8 +8,7 @@ const Header = () => {
     <section 
       className="relative bg-cover bg-center bg-no-repeat min-h-screen flex items-center justify-center px-6 md:px-12 "
       style={{
-        // backgroundImage: `url(${bannerImage})`
-        backgroundImage: `url('https://static.vecteezy.com/system/resources/thumbnails/027/793/892/small_2x/financial-investment-concept-city-and-stack-of-coins-generative-ai-free-photo.jpg')`
+         backgroundImage: `url(${bannerImage})`
       }}
     >
       {/* Overlay for dark tint */}
