@@ -29,7 +29,8 @@ const Header = () => {
         </p>
         <button
   className="mt-8 bg-[var(--brand-gold)] hover:bg-[var(--brand-gold-dark)] text-[var(--brand-light)] font-semibold py-3 px-8 rounded-lg transition-all cursor-pointer"
-  onClick={() => window.open("https://docs.google.com/forms/d/e/1FAIpQLSfh3eP7up1w6jwl7dONh2GpNmGFbOlvhW-UTzPbbhcK41fKkQ/viewform?embedded=true", "_blank")}
+  // onClick={() => window.open("https://docs.google.com/forms/d/e/1FAIpQLSfh3eP7up1w6jwl7dONh2GpNmGFbOlvhW-UTzPbbhcK41fKkQ/viewform?embedded=true", "_blank")}
+      onClick={()=>window.open("https://docs.google.com/forms/d/e/1FAIpQLSfh3eP7up1w6jwl7dONh2GpNmGFbOlvhW-UTzPbbhcK41fKkQ/viewform","_blank")}
 >
   Get Started
 </button>
