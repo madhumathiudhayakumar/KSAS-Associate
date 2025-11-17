@@ -1,4 +1,6 @@
+import React from "react";
 import { Route, BrowserRouter as Router, Routes } from "react-router-dom";
+
 import HomeScreen from "../screens/HomeScreen";
 import PrivacyPolicy from "../screens/PrivacyPolicy";
 import Navbar from "../components/Navbar";
@@ -13,13 +15,13 @@ const AppRoutes = () => {
         <Navbar />
         <Routes>
           {/* <main className="flex-grow mt-16"> */}
-            <Route path="/" element={<HomeScreen/>} />
-             <Route path="/terms-condition" element={<TermsAndCondition />} /> 
-            <Route path="/privacy-policy" element={<PrivacyPolicy />} />  
-            <Route path="/application-form" element={<ClientContactForm />} />
+          <Route path="/" element={<HomeScreen />} />
+          <Route path="/terms-condition" element={<TermsAndCondition />} />
+          <Route path="/privacy-policy" element={<PrivacyPolicy />} />
+          <Route path="/application-form" element={<ClientContactForm />} />
           {/* </main> */}
         </Routes>
-                  <Footer />
+        <Footer />
       </Router>
     </div>
   )

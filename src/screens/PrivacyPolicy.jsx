@@ -43,8 +43,8 @@ const PrivacyPolicy = () => {
         {/* ======= Main Content ======= */}
         <section className="py-16 px-6 md:px-20 lg:px-32 ">
           <div data-aos="fade-down"
-     data-aos-easing="linear"
-     data-aos-duration="1500"  className="max-w-5xl mx-auto bg-[var(--brand-light)] backdrop-blur-sm rounded-2xl shadow-[0_0_20px_rgba(0,0,0,0.2)] p-8 md:p-12 leading-relaxed">
+            data-aos-easing="linear"
+            data-aos-duration="1500" className="max-w-5xl mx-auto bg-[var(--brand-light)] backdrop-blur-sm rounded-2xl shadow-[0_0_20px_rgba(0,0,0,0.2)] p-8 md:p-12 leading-relaxed">
             {/* Quote */}
             <blockquote className="text-3xl font-bold text-[var(--brand-dark)] mb-6  pl-4">
               Privacy Policy
@@ -62,7 +62,6 @@ const PrivacyPolicy = () => {
               and <span className="font-semibold text-[var(--brand-dark)]">AMFI.</span>
             </p>
 
-            {/* Helper function style */}
             {[
               {
                 title: "A. Personal Information",
@@ -100,7 +99,6 @@ const PrivacyPolicy = () => {
               </div>
             ))}
 
-            {/* Other sections */}
             <h2 className="text-2xl font-bold text-[var(--brand-dark)] mt-10 mb-3">
               2. How We Use Your Information
             </h2>

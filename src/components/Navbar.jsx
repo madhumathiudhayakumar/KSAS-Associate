@@ -1,9 +1,18 @@
 import React, { useEffect, useState } from "react";
-import { XMarkIcon, Bars3Icon } from "@heroicons/react/24/solid";
+import { Link, useLocation, useNavigate } from "react-router-dom";
 
+import { XMarkIcon, Bars3Icon } from "@heroicons/react/24/solid";
 import AutoScrollHeader from "./AutoScrollHeader";
 import logo from "../assets/logo_circle_image.png";
-import { Link, useLocation, useNavigate } from "react-router-dom";
+
+const navLinks = [
+  { name: "Home", href: "#header" },
+  { name: "About Us", href: "#aboutus" },
+  { name: "Services", href: "#services" },
+  { name: "About Me", href: "#aboutme" },
+  { name: "Terms & Conditions", href: "/terms-condition" },
+  { name: "Contact Us", href: "#contactus" },
+];
 
 const Navbar = () => {
   const location = useLocation()
@@ -11,34 +20,22 @@ const Navbar = () => {
   const currentHash = location.hash || (location.pathname === "/" ? "#header" : "");
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
-  console.log("Current Hash:", location.hash, location.pathname, currentHash);
 
-  const navLinks = [
-    { name: "Home", href: "#header" },
-    { name: "About Us", href: "#aboutus" },
-    { name: "Services", href: "#services" },
-    { name: "About Me", href: "#aboutme" },
-    { name: "Terms & Conditions", href: "/terms-condition" },
-    { name: "Contact Us", href: "#contactus" },
-  ];
   const handleNavClick = (href) => {
     if (isMenuOpen) {
       setIsMenuOpen(false);
     }
     if (location.pathname === "/") {
-      // already on home → scroll smoothly
       document.querySelector(href)?.scrollIntoView({ behavior: "smooth" });
     } else {
-      // navigate to home first
       navigate("/");
-
       // wait for React to render Home, then scroll
       setTimeout(() => {
         const section = document.querySelector(href);
         if (section) {
           section.scrollIntoView({ behavior: "smooth" });
         }
-      }, 300); // delay for home render
+      }, 300);
     }
   };
 
@@ -46,7 +43,7 @@ const Navbar = () => {
     <>
       <nav className="w-full bg-[var(--brand-light)] shadow-sm  top-0 left-0 z-50">
         {location?.pathname !== "/privacy-policy" && location?.pathname !== "/terms-condition" && location.pathname !== "/application-form"
-        && <AutoScrollHeader />}
+          && <AutoScrollHeader />}
         <div className="max-w-7xl mx-auto flex items-center justify-between px-4 sm:px-6 md:px-10 py-3 md:py-4">
           {/* Logo Section */}
           {/* <div className="flex items-center gap-2">
@@ -68,9 +65,8 @@ const Navbar = () => {
               const isSectionLink = link.href.startsWith("#");
 
               const isActive = isSectionLink
-                ? currentHash === link.href          // highlight for home/sections
+                ? currentHash === link.href
                 : location.pathname === link.href;
-              console.log("isActive", isSectionLink, isActive, currentHash, link.href);
               return (
                 <li key={link.name}>
                   <Link to={isSectionLink ? "/" : link.href}
@@ -78,11 +74,6 @@ const Navbar = () => {
                     className={`transition-colors duration-200 ${isActive ? "text-[var(--brand-gold)] font-semibold" : "hover:text-[var(--brand-gold-dark)]"
                       }`}>
                     {link.name}</Link>
-                  {/* <a
-                  href={link.href}
-                  className="hover:text-[#af8a4a] transition-colors duration-200"
-                > */}
-                  {/* </a> */}
                 </li>
               )
             })}
@@ -124,7 +115,7 @@ const Navbar = () => {
                 const isSectionLink = link.href.startsWith("#");
 
                 const isActive = isSectionLink
-                  ? currentHash === link.href          // highlight for home/sections
+                  ? currentHash === link.href
                   : location.pathname === link.href;
                 return (
                   <li key={link.name}>
@@ -133,15 +124,6 @@ const Navbar = () => {
                       className={`transition-colors duration-200 ${isActive ? "text-[var(--brand-gold)] font-semibold" : "hover:text-[var(--brand-gold-dark)]"
                         }`}>
                       {link.name}</Link>
-                    {/* <a
-                    href={link.href}
-                    onClick={() => setIsMenuOpen(false)}
-                       className={`transition-colors duration-200 ${
-                  isActive ? "text-[var(--brand-gold)] font-semibold" : "hover:text-[var(--brand-gold-dark)]"
-                }`}
-                  >
-                    {link.name}
-                  </a> */}
                   </li>
                 )
               })}

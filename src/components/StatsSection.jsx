@@ -1,9 +1,10 @@
+import { useEffect, useState } from "react";
+
 import { FaBuffer, FaSuitcase, FaSearch } from "react-icons/fa";
 import { BsEmojiSmile } from "react-icons/bs";
 import { AiOutlineInsurance, AiOutlineFund } from "react-icons/ai";
 import { MdOutlineOutbond } from "react-icons/md";
 import { FaHandHoldingUsd } from "react-icons/fa";
-import { useEffect, useState } from "react";
 
 
 const stats = [
@@ -55,7 +56,7 @@ const StatsSection = () => {
               {item.icon}
             </div>
             <h2 className="text-4xl font-bold text-[var(--brand-dark)]">
-              <CountUp end={item.value} duration={1500} />{item.label === "Happy Clients" && "+" }             </h2>
+              <CountUp end={item.value} duration={1500} />{item.label === "Happy Clients" && "+"}             </h2>
             <p className="text-[var(--brand-gray)] mt-2">{item.label}</p>
           </div>
         ))}

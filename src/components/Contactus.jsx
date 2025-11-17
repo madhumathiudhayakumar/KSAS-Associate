@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+
 import emailjs from '@emailjs/browser';
 import ContactImage from "../assets/contact-image.jpg";
 import { AiFillCheckCircle } from "react-icons/ai";
@@ -15,10 +16,8 @@ const Contactus = () => {
   const handleChange = (e) => {
     const { name, value } = e.target;
     setContactData({ ...contactData, [name]: value });
-    setErrors((prev) => ({ ...prev, [name]: "" })); // Clear error on change
+    setErrors((prev) => ({ ...prev, [name]: "" }));
   };
-
-  console.log("Errors:", errors);
 
   const handleSubmit = (e) => {
     e.preventDefault();
@@ -47,7 +46,6 @@ const Contactus = () => {
     setLoading(true);
     emailjs.send(serviceID, templateID, templateParams, publicKey)
       .then((response) => {
-        console.log("SUCCESS!", response.status, response.text);
         setLoading(false);
         window.scrollTo({
           top: 0,
@@ -62,22 +60,13 @@ const Contactus = () => {
         alert("Failed to send message, please try again later.");
         console.log("FAILED...", err);
       });
-    console.log(contactData, "Submitted Contact Data");
-
   }
 
   return (
     <>
       {showSuccessMessage &&
         <div
-          className="
-    fixed top-6 left-1/2 transform -translate-x-1/2
-    w-[90%] sm:w-auto   /* responsive width */
-    flex items-center gap-2
-    p-4 text-sm text-green-800 rounded-lg
-    bg-[var(--brand-light)] text-center
-    shadow-lg z-50
-  "
+          className="fixed top-6 left-1/2 transform -translate-x-1/2 w-[90%] sm:w-auto   /* responsive width */ flex items-center gap-2 p-4 text-sm text-green-800 rounded-lg bg-[var(--brand-light)] text-center shadow-lg z-50"
           role="alert"
         >
           <AiFillCheckCircle size={20} />
@@ -86,7 +75,6 @@ const Contactus = () => {
             <span className="font-normal">We’ve received your message and will get back to you soon.</span>
           </p>
         </div>
-
       }
 
       <section id="contact" className="bg-[var(--brand-dark)] py-16">
@@ -121,8 +109,6 @@ const Contactus = () => {
             {/* RIGHT SIDE — FORM CARD */}
             <div className="bg-[var(--brand-light)] rounded-xl p-8 shadow-xl">
               <form className="space-y-5" onSubmit={handleSubmit}>
-
-                {/* Name */}
                 <input
                   type="text"
                   required
@@ -132,8 +118,6 @@ const Contactus = () => {
                   value={contactData.name || ""}
                   className="w-full border border-gray-300 rounded-lg px-4 py-3 focus:ring-[var(--brand-gold)] focus:border-[var(--brand-gold)] outline-none"
                 />
-
-                {/* Mobile */}
                 <input
                   type="tel"
                   required
@@ -147,8 +131,6 @@ const Contactus = () => {
                 {errors.mobile && (
                   <p className="text-red-500 text-sm">{errors.mobile}</p>
                 )}
-
-                {/* Email */}
                 <input
                   type="email"
                   required
@@ -162,8 +144,6 @@ const Contactus = () => {
                 {errors.email && (
                   <p className="text-red-500 text-sm">{errors.email}</p>
                 )}
-
-                {/* Select Service */}
                 <select
                   required
                   name="service"
@@ -176,8 +156,6 @@ const Contactus = () => {
                   <option>Financial Planner</option>
                   <option>Tax Planning</option>
                 </select>
-
-                {/* Message */}
                 <textarea
                   required
                   rows="4"
@@ -187,8 +165,6 @@ const Contactus = () => {
                   onChange={handleChange}
                   className="w-full border border-gray-300 rounded-lg px-4 py-3 resize-none focus:ring-[var(--brand-gold)] focus:border-[var(--brand-gold)] outline-none"
                 ></textarea>
-
-                {/* Submit Button */}
                 <button
                   type="submit"
                   className="bg-[var(--brand-gold)] text-[var(--brand-light)] font-semibold 
@@ -203,15 +179,12 @@ const Contactus = () => {
                     "Submit"
                   )}
                 </button>
-
-
               </form>
             </div>
           </div>
         </div>
       </section>
     </>
-
   );
 };
 

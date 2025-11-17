@@ -1,5 +1,6 @@
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Navigation, Pagination, Autoplay } from "swiper/modules";
+
 import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
@@ -62,61 +63,61 @@ const BooksCarousel = () => {
     <section className="bg-[var(--brand-dark)] py-16">
       {/* Heading */}
       <div data-aos="fade-down"
-     data-aos-easing="linear"
-     data-aos-duration="1500">
-      <p className="text-center text-[var(--brand-light)] text-lg italic mb-6 px-4">
-        “An investment in knowledge pays the best interest.” — Benjamin Franklin
-      </p>
-      <h2 className="text-center text-[var(--brand-light)] text-2xl md:text-4xl font-bold">
-        {/* TOP FINANCIAL BOOKS */}
-        RECOMMENDED BOOKS
-      </h2>
+        data-aos-easing="linear"
+        data-aos-duration="1500">
+        <p className="text-center text-[var(--brand-light)] text-lg italic mb-6 px-4">
+          “An investment in knowledge pays the best interest.” — Benjamin Franklin
+        </p>
+        <h2 className="text-center text-[var(--brand-light)] text-2xl md:text-4xl font-bold">
+          {/* TOP FINANCIAL BOOKS */}
+          RECOMMENDED BOOKS
+        </h2>
 
-      {/* Underline */}
-      <div className="w-14 h-1 bg-[var(--brand-gold)] mx-auto mt-2 mb-10 rounded-full"></div>
+        {/* Underline */}
+        <div className="w-14 h-1 bg-[var(--brand-gold)] mx-auto mt-2 mb-10 rounded-full"></div>
 
-      <div  className="container mx-auto px-4">
-        <div className="relative pb-12">
-          <Swiper
-            modules={[Navigation, Pagination, Autoplay]}
-            slidesPerView={1}
-            autoplay={{ delay: 3000 }}
-            pagination={{ clickable: true }}
-            spaceBetween={30}
-            breakpoints={{
-              640: { slidesPerView: 2 },
-              1024: { slidesPerView: 4 },
-            }}
-            className="!pb-10"
-          >
-            {books.map((book, index) => (
-              <SwiperSlide key={index} className="h-auto">
-                <div className="bg-[var(--brand-light)] rounded-xl p-6 shadow-xl hover:shadow-2xl transition-all duration-300 
+        <div className="container mx-auto px-4">
+          <div className="relative pb-12">
+            <Swiper
+              modules={[Navigation, Pagination, Autoplay]}
+              slidesPerView={1}
+              autoplay={{ delay: 3000 }}
+              pagination={{ clickable: true }}
+              spaceBetween={30}
+              breakpoints={{
+                640: { slidesPerView: 2 },
+                1024: { slidesPerView: 4 },
+              }}
+              className="!pb-10"
+            >
+              {books.map((book, index) => (
+                <SwiperSlide key={index} className="h-auto">
+                  <div className="bg-[var(--brand-light)] rounded-xl p-6 shadow-xl hover:shadow-2xl transition-all duration-300 
                     text-center flex flex-col items-center justify-between h-full">
-                  {/* Book Cover */}
-                  <img
-                    src={book.img}
-                    alt={book.title}
-                    className="w-40 h-56 object-cover rounded-lg mb-4"
-                  />
+                    {/* Book Cover */}
+                    <img
+                      src={book.img}
+                      alt={book.title}
+                      className="w-40 h-56 object-cover rounded-lg mb-4"
+                    />
 
-                  {/* Book Info */}
-                  <div className="flex flex-col flex-grow justify-between">
-                    <h3 className="text-lg font-semibold text-[var(--brand-dark)] line-clamp-2">
-                      {book.title}
-                    </h3>
-                    <p className="text-[var(--brand-gray)] text-sm mt-2">
-                      {book.author}
-                    </p>
+                    {/* Book Info */}
+                    <div className="flex flex-col flex-grow justify-between">
+                      <h3 className="text-lg font-semibold text-[var(--brand-dark)] line-clamp-2">
+                        {book.title}
+                      </h3>
+                      <p className="text-[var(--brand-gray)] text-sm mt-2">
+                        {book.author}
+                      </p>
+                    </div>
                   </div>
-                </div>
-              </SwiperSlide>
-            ))}
+                </SwiperSlide>
+              ))}
 
-          </Swiper>
+            </Swiper>
 
-          {/* Pagination styling */}
-          <style>{`
+            {/* Pagination styling */}
+            <style>{`
             .swiper-pagination {
               bottom: 0 !important;
             }
@@ -128,8 +129,8 @@ const BooksCarousel = () => {
               background: #af8a4a !important;
             }
           `}</style>
+          </div>
         </div>
-      </div>
       </div>
     </section>
   );

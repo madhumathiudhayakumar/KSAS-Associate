@@ -38,22 +38,19 @@ const TermsAndCondition = () => {
         {/* ======= Main Content ======= */}
         <section className="py-16 px-6 md:px-20 lg:px-32">
           <div data-aos="fade-down"
-     data-aos-easing="linear"
-     data-aos-duration="1500" className="max-w-5xl mx-auto bg-[var(--brand-light)]/60 backdrop-blur-sm rounded-2xl shadow-[0_0_20px_rgba(0,0,0,0.2)] p-8 md:p-12 leading-relaxed">
+            data-aos-easing="linear"
+            data-aos-duration="1500" className="max-w-5xl mx-auto bg-[var(--brand-light)]/60 backdrop-blur-sm rounded-2xl shadow-[0_0_20px_rgba(0,0,0,0.2)] p-8 md:p-12 leading-relaxed">
 
-            {/* Page Title */}
             <blockquote className="text-3xl font-bold text-[var(--brand-dark)] mb-6 border-l-4 border-[var(--brand-gold)] pl-4">
               Terms and Conditions
             </blockquote>
 
-            {/* Intro */}
             <p className="text-[var(--brand-dark)] mb-6">
               Welcome to <span className="text-[var(--brand-dark)] font-bold">Ebony Wealth Management System</span> (“we,” “our,” “us”). By accessing or using our platform,
               services, or submitting your information to Ebony Wealth Management, you agree to comply with and
               be bound by the following Terms and Conditions. Please read them carefully before proceeding.
             </p>
 
-            {/* 1. Definitions */}
             <h2 className="text-xl font-semibold text-[var(--brand-gold)] mt-8 mb-4 tracking-wide">1. Definitions</h2>
             <ul className="space-y-3">
               {[
@@ -74,7 +71,6 @@ const TermsAndCondition = () => {
               ))}
             </ul>
 
-            {/* 2. Scope of Services */}
             <h2 className="text-xl font-semibold text-[var(--brand-gold)] mt-8 mb-4 tracking-wide">2. Scope of Services</h2>
             <p className="mb-2">Ebony Wealth Management provides:</p>
             <ul className="space-y-3">
@@ -91,7 +87,6 @@ const TermsAndCondition = () => {
             </ul>
             <p className="mt-3">All recommendations are <strong>based on the information provided by the client</strong> and should not be treated as guaranteed returns or investment advice for speculative purposes.</p>
 
-            {/* 3. Eligibility */}
             <h2 className="text-xl font-semibold text-[var(--brand-gold)] mt-8 mb-4 tracking-wide">3. Eligibility</h2>
             <p className="mb-2">To use our services, you must:</p>
             <ul className="space-y-3">
@@ -112,7 +107,6 @@ const TermsAndCondition = () => {
               ))}
             </ul>
 
-            {/* 4. Client Responsibilities */}
             <h2 className="text-xl font-semibold text-[var(--brand-gold)] mt-8 mb-4 tracking-wide">4. Client Responsibilities</h2>
             <p className="mb-2">By using our services, the client agrees to:</p>
             <ul className="space-y-3">
@@ -128,7 +122,6 @@ const TermsAndCondition = () => {
               ))}
             </ul>
 
-            {/* 5. Confidentiality */}
             <h2 className="text-xl font-semibold text-[var(--brand-gold)] mt-8 mb-4 tracking-wide">5. Confidentiality and Data Protection</h2>
             <ul className="space-y-3">
               {[
@@ -146,7 +139,6 @@ const TermsAndCondition = () => {
               ))}
             </ul>
 
-            {/* 6. Risk Disclosure */}
             <h2 className="text-xl font-semibold text-[var(--brand-gold)] mt-8 mb-4 tracking-wide">6. Risk Disclosure</h2>
             <ul className="space-y-3">
               {[
@@ -163,7 +155,6 @@ const TermsAndCondition = () => {
               ))}
             </ul>
 
-            {/* 7. Limitation of Liability */}
             <h2 className="text-xl font-semibold text-[var(--brand-gold)] mt-8 mb-4 tracking-wide">7. Limitation of Liability</h2>
             <ul className="space-y-3">
               {[
@@ -180,7 +171,6 @@ const TermsAndCondition = () => {
               ))}
             </ul>
 
-            {/* 8. Termination */}
             <h2 className="text-xl font-semibold text-[var(--brand-gold)] mt-8 mb-4 tracking-wide">8. Termination of Services</h2>
             <ul className="space-y-3">
               {[
@@ -194,7 +184,6 @@ const TermsAndCondition = () => {
               ))}
             </ul>
 
-            {/* 9. Amendments */}
             <h2 className="text-xl font-semibold text-[var(--brand-gold)] mt-8 mb-4 tracking-wide">9. Amendments</h2>
             <p>
               Ebony Wealth Management reserves the right to <strong>update or modify</strong> these Terms and Conditions at any time.

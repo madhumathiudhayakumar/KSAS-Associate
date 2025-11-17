@@ -18,7 +18,7 @@ const ClientContactForm = () => {
           </div>
         )}
 
-        {/* 🔥 Responsive Iframe Wrapper */}
+        {/*  Responsive Iframe Wrapper */}
         <div
           className="w-full overflow-hidden flex justify-center"
           style={{
@@ -42,7 +42,7 @@ const ClientContactForm = () => {
 
       </div>
 
-      {/* 🔥 Mobile Responsive Scaling */}
+      {/*  Mobile Responsive Scaling */}
       <style>
         {`
           @media (max-width: 768px) {

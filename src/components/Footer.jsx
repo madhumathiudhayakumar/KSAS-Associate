@@ -1,10 +1,10 @@
 import React from "react";
-import { FaFacebookF, FaTwitter, FaInstagram } from "react-icons/fa";
+import { Link, useLocation, useNavigate } from "react-router-dom";
 
+import { FaFacebookF, FaTwitter, FaInstagram } from "react-icons/fa";
 import amfilogo from "../assets/amfi-logo.webp";
 import mutualfundlogo from "../assets/mutualfund-logo.webp";
 import logo from "../assets/logo_circle_image.png";
-import { Link, useLocation, useNavigate } from "react-router-dom";
 
 const Footer = () => {
   const location = useLocation()
@@ -18,19 +18,15 @@ const Footer = () => {
 
   const handleNavClick = (href) => {
     if (location.pathname === "/") {
-      // already on home → scroll smoothly
       document.querySelector(href)?.scrollIntoView({ behavior: "smooth" });
     } else {
-      // navigate to home first
       navigate("/");
-
-      // wait for React to render Home, then scroll
       setTimeout(() => {
         const section = document.querySelector(href);
         if (section) {
           section.scrollIntoView({ behavior: "smooth" });
         }
-      }, 300); // delay for home render
+      }, 300);
     }
   };
 
@@ -74,21 +70,21 @@ const Footer = () => {
             </p>
 
             <p className="text-sm text-[var(--brand-gray-light)] leading-relaxed text-left">
-              <span className="font-semibold text-[var(--brand-light)]">Disclaimer:</span>  Mutual fund 
-              investments are subject to market risks. Investors are advised to read the scheme 
-              information documents and all related materials carefully before investing. 
+              <span className="font-semibold text-[var(--brand-light)]">Disclaimer:</span>  Mutual fund
+              investments are subject to market risks. Investors are advised to read the scheme
+              information documents and all related materials carefully before investing.
               Past performance does not guarantee future results. Please evaluate your individual
-              financial goals and risk tolerance before selecting a fund or creating an investment 
+              financial goals and risk tolerance before selecting a fund or creating an investment
               portfolio.
             </p>
 
             <p className="text-sm text-[var(--brand-gray-light)] leading-relaxed text-left">
               <span className="font-semibold text-[var(--brand-light)]">Ebony Wealth Partner LLP</span> makes no warranties or representations, expressed
-              or implied, regarding the products or services offered through its platform. 
-             The firm shall not be held liable for any loss or damage arising from the use of, or 
-             reliance on, any information, products, or related services provided. All website terms 
-             and conditions apply. Investments in securities markets are subject to market risks; 
-             please read all associated documents carefully before making any investment decisions.
+              or implied, regarding the products or services offered through its platform.
+              The firm shall not be held liable for any loss or damage arising from the use of, or
+              reliance on, any information, products, or related services provided. All website terms
+              and conditions apply. Investments in securities markets are subject to market risks;
+              please read all associated documents carefully before making any investment decisions.
             </p>
           </div>
         </div>
@@ -157,7 +153,6 @@ const Footer = () => {
     </div> */}
         </div>
       </div>
-
     </footer>
   );
 };

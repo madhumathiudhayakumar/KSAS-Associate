@@ -17,8 +17,8 @@ const ServiceAnalyticSection = () => {
     <section className="py-12 ">
       <div className="container mx-auto px-6">
         <div data-aos="fade-down"
-     data-aos-easing="linear"
-     data-aos-duration="1500" className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-6 gap-6">
+          data-aos-easing="linear"
+          data-aos-duration="1500" className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-6 gap-6">
           {services.map((service, i) => (
             <div
               key={i}
