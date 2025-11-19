@@ -50,11 +50,11 @@ const PrivacyPolicy = () => {
               Privacy Policy
             </blockquote>
             <blockquote className="text-lg italic text-[var(--brand-dark)] mb-6 border-l-4 border-[var(--brand-gold)] pl-4">
-              “Trust is the currency of wealth management. At Ebony, we safeguard both — your assets and your confidence”
+              “Trust is the currency of wealth management. At Fortuna, we safeguard both — your assets and your confidence”
             </blockquote>
 
             <p className="text-[var(--brand-dark)] mb-6">
-              At <span className="font-semibold text-[var(--brand-dark)]">Ebony Wealth Management</span>, we value your trust above all else.
+              At <span className="font-semibold text-[var(--brand-dark)]">Fortuna Wealth Management</span>, we value your trust above all else.
               Protecting your personal and financial information is our highest priority.
               This Privacy Policy outlines how we collect, use, share, and safeguard your information
               when you interact with our services, in accordance with applicable laws and regulations,

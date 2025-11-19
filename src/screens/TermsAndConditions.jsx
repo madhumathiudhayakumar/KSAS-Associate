@@ -46,8 +46,8 @@ const TermsAndCondition = () => {
             </blockquote>
 
             <p className="text-[var(--brand-dark)] mb-6">
-              Welcome to <span className="text-[var(--brand-dark)] font-bold">Ebony Wealth Management System</span> (“we,” “our,” “us”). By accessing or using our platform,
-              services, or submitting your information to Ebony Wealth Management, you agree to comply with and
+              Welcome to <span className="text-[var(--brand-dark)] font-bold">Fortuna Wealth Management System</span> (“we,” “our,” “us”). By accessing or using our platform,
+              services, or submitting your information to Fortuna Wealth Management, you agree to comply with and
               be bound by the following Terms and Conditions. Please read them carefully before proceeding.
             </p>
 
@@ -55,13 +55,13 @@ const TermsAndCondition = () => {
             <ul className="space-y-3">
               {[
                 <>
-                  <strong>Client / User:</strong> Any individual or entity that uses the services of Ebony Wealth Management.
+                  <strong>Client / User:</strong> Any individual or entity that uses the services of Fortuna Wealth Management.
                 </>,
                 <>
                   <strong>Services:</strong> Financial advisory, investment planning, insurance guidance, and other wealth management-related offerings.
                 </>,
                 <>
-                  <strong>Platform:</strong> The Ebony Wealth Management System website, mobile application, and all digital interfaces associated with our services.
+                  <strong>Platform:</strong> The Fortuna Wealth Management System website, mobile application, and all digital interfaces associated with our services.
                 </>
               ].map((item, i) => (
                 <li key={i} className="flex items-start gap-3">
@@ -72,7 +72,7 @@ const TermsAndCondition = () => {
             </ul>
 
             <h2 className="text-xl font-semibold text-[var(--brand-gold)] mt-8 mb-4 tracking-wide">2. Scope of Services</h2>
-            <p className="mb-2">Ebony Wealth Management provides:</p>
+            <p className="mb-2">Fortuna Wealth Management provides:</p>
             <ul className="space-y-3">
               {[
                 "Financial and investment advisory services.",
@@ -126,7 +126,7 @@ const TermsAndCondition = () => {
             <ul className="space-y-3">
               {[
                 <>
-                  All personal, financial, and contact information shared with Ebony Wealth Management will remain <strong>strictly confidential.</strong>
+                  All personal, financial, and contact information shared with Fortuna Wealth Management will remain <strong>strictly confidential.</strong>
                 </>,
                 <>
                   Data will be used <strong>solely for financial analysis, planning, and communication</strong> related to the client’s account.
@@ -145,7 +145,7 @@ const TermsAndCondition = () => {
                 <>
                   Investments in securities, mutual funds, bonds, and other financial instruments are subject to <strong>market risks.</strong>
                 </>,
-                "Ebony Wealth Management does not guarantee any fixed returns or capital protection.",
+                "Fortuna Wealth Management does not guarantee any fixed returns or capital protection.",
                 "The client acknowledges that all investment decisions are made at their own discretion and risk."
               ].map((item, i) => (
                 <li key={i} className="flex items-start gap-3">
@@ -158,7 +158,7 @@ const TermsAndCondition = () => {
             <h2 className="text-xl font-semibold text-[var(--brand-gold)] mt-8 mb-4 tracking-wide">7. Limitation of Liability</h2>
             <ul className="space-y-3">
               {[
-                "Ebony Wealth Management shall not be held liable for any direct or indirect losses, damages, or claims arising from:",
+                "Fortuna Wealth Management shall not be held liable for any direct or indirect losses, damages, or claims arising from:",
                 "Market fluctuations",
                 "Third-party platform failures",
                 "Client misrepresentation or delay in providing information.",
@@ -175,7 +175,7 @@ const TermsAndCondition = () => {
             <ul className="space-y-3">
               {[
                 "Either party may terminate the engagement by providing written notice.",
-                "Ebony Wealth Management reserves the right to suspend or terminate services for non-compliance, misuse, or fraudulent activity."
+                "Fortuna Wealth Management reserves the right to suspend or terminate services for non-compliance, misuse, or fraudulent activity."
               ].map((item, i) => (
                 <li key={i} className="flex items-start gap-3">
                   <BsSunFill className="w-5 h-5 text-[var(--brand-gold)] mt-1" />
@@ -186,7 +186,7 @@ const TermsAndCondition = () => {
 
             <h2 className="text-xl font-semibold text-[var(--brand-gold)] mt-8 mb-4 tracking-wide">9. Amendments</h2>
             <p>
-              Ebony Wealth Management reserves the right to <strong>update or modify</strong> these Terms and Conditions at any time.
+              Fortuna Wealth Management reserves the right to <strong>update or modify</strong> these Terms and Conditions at any time.
               Clients will be notified of major updates through email or official communication channels.    </p>
           </div>
         </section>

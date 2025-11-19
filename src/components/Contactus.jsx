@@ -31,7 +31,7 @@ const Contactus = () => {
       mobile: contactData.mobile,
       service: contactData.service,
       message: contactData.message,
-      website_name: "Ebony Wealth Management",
+      website_name: "Fortuna Wealth Management",
     };
     const mobileError = /^\d{10}$/.test(contactData.mobile)
       ? ""

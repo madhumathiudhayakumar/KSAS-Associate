@@ -17,7 +17,7 @@ const Services = () => {
         <div className="w-14 h-1 bg-[var(--brand-gold)] mx-auto mt-2 mb-6 rounded-full"></div>
 
         <p className="text-[var(--brand-dark)] max-w-3xl mx-auto text-base md:text-lg leading-relaxed">
-          With Ebony Wealth Partners LLP, your financial aspirations become achievable goals,
+          With Fortuna Wealth Management, your financial aspirations become achievable goals,
           and your wealth journey becomes structured, secure, and sustainable.
         </p>
       </div>

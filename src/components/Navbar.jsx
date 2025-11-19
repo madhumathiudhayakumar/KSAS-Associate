@@ -3,7 +3,7 @@ import { Link, useLocation, useNavigate } from "react-router-dom";
 
 import { XMarkIcon, Bars3Icon } from "@heroicons/react/24/solid";
 import AutoScrollHeader from "./AutoScrollHeader";
-import logo from "../assets/logo_circle_image.png";
+import logo from "../assets/logo.png";
 
 const navLinks = [
   { name: "Home", href: "#header" },
@@ -48,7 +48,7 @@ const Navbar = () => {
           {/* Logo Section */}
           {/* <div className="flex items-center gap-2">
             <div className="flex items-center space-x-2 px-4 py-2"> */}
-          <div className="bg-[var(--brand-dark)] rounded-full w-20 h-20 flex items-center justify-center">
+          <div className="rounded-full w-20 h-20 flex items-center justify-center">
             <img
               src={logo}
               alt="Logo"

@@ -4,7 +4,7 @@ import { Link, useLocation, useNavigate } from "react-router-dom";
 import { FaFacebookF, FaTwitter, FaInstagram } from "react-icons/fa";
 import amfilogo from "../assets/amfi-logo.webp";
 import mutualfundlogo from "../assets/mutualfund-logo.webp";
-import logo from "../assets/logo_circle_image.png";
+import logo from "../assets/logo.png";
 
 const Footer = () => {
   const location = useLocation()
@@ -35,11 +35,11 @@ const Footer = () => {
       <div className="bg-[var(--brand-gray-dark)] max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
         <div className="flex justify-center mb-6">
           <div className="flex flex-col items-center">
-            <div className="bg-[var(--brand-dark)] rounded-full w-30 h-30 flex items-center justify-center">
+            <div className=" rounded-full w-30 h-30 flex items-center justify-center">
               <img
                 src={logo}
                 alt="Logo"
-                className="w-24 h-24 object-contain rounded-full cursor-pointer"
+                className="w-26 h-26 object-contain rounded-full cursor-pointer"
                 onClick={() => handleNavClick("#header")}
               />
             </div>
@@ -66,7 +66,7 @@ const Footer = () => {
         <div className="px-4 md:px-8 pb-8">
           <div className="mx-auto text-left space-y-4">
             <p className="font-semibold text-[var(--brand-light)] text-left">
-              <span className="font-semibold text-[var(--brand-light)]">Ebony Wealth Partner LLP </span> is an AMFI-registered Mutual Fund Distributor.
+              <span className="font-semibold text-[var(--brand-light)]">Fortuna Wealth Management</span> is an AMFI-registered Mutual Fund Distributor.
             </p>
 
             <p className="text-sm text-[var(--brand-gray-light)] leading-relaxed text-left">
@@ -79,7 +79,7 @@ const Footer = () => {
             </p>
 
             <p className="text-sm text-[var(--brand-gray-light)] leading-relaxed text-left">
-              <span className="font-semibold text-[var(--brand-light)]">Ebony Wealth Partner LLP</span> makes no warranties or representations, expressed
+              <span className="font-semibold text-[var(--brand-light)]">Fortuna Wealth Management</span> makes no warranties or representations, expressed
               or implied, regarding the products or services offered through its platform.
               The firm shall not be held liable for any loss or damage arising from the use of, or
               reliance on, any information, products, or related services provided. All website terms
@@ -120,7 +120,7 @@ const Footer = () => {
             <p className="text-[var(--brand-gray-light)]">
               © Copyright 2025{" "}
               <span className="font-semibold text-[var(--brand-light)]">
-                Ebony Wealth Partners LLP —
+                Fortuna Wealth Management —
               </span>{" "}
               All rights reserved.
             </p>

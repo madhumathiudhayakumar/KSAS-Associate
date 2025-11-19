@@ -8,6 +8,7 @@ import Aboutme from "../components/Aboutme";
 import Contactus from "../components/Contactus";
 import BooksCarousel from "../components/BooksCarousel";
 import ServiceAnalyticSection from "../components/ServiceAnalyticSection";
+import OurPhilosophy from "../components/OurPhilosophy";
 
 
 const HomeScreen = () => {
@@ -20,6 +21,9 @@ const HomeScreen = () => {
         <StatsSection />
       </section>
       <ServiceAnalyticSection />
+      {/* <section id="ourphilosophy" className="scroll-mt-24">
+        <OurPhilosophy />
+      </section> */}
       <section id="aboutus" className="scroll-mt-24">
         <AboutUsSection />
       </section>
