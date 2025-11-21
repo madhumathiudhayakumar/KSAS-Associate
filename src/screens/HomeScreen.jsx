@@ -9,6 +9,8 @@ import Contactus from "../components/Contactus";
 import BooksCarousel from "../components/BooksCarousel";
 import ServiceAnalyticSection from "../components/ServiceAnalyticSection";
 import OurPhilosophy from "../components/OurPhilosophy";
+import RecommendedMovies from "../components/RecommedndedMovies";
+import TedTalks from "../components/TedTalks";
 
 
 const HomeScreen = () => {
@@ -21,16 +23,24 @@ const HomeScreen = () => {
         <StatsSection />
       </section>
       <ServiceAnalyticSection />
-      {/* <section id="ourphilosophy" className="scroll-mt-24">
+      <section id="ourphilosophy" className="scroll-mt-24">
         <OurPhilosophy />
-      </section> */}
+      </section>
       <section id="aboutus" className="scroll-mt-24">
         <AboutUsSection />
       </section>
       <section id="services" className="scroll-mt-24">
         <Services />
       </section>
+      <section id="bookscarousel" className="scroll-mt-24">
       <BooksCarousel />
+      </section>
+      <section id="recommendedmovies" className="scroll-mt-24">
+      <RecommendedMovies/>
+       </section>
+       <section>
+        <TedTalks/>
+       </section>
       <section id="aboutme" className="scroll-mt-24">
         <Aboutme />
       </section>

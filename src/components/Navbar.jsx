@@ -2,6 +2,7 @@ import React, { useEffect, useState } from "react";
 import { Link, useLocation, useNavigate } from "react-router-dom";
 
 import { XMarkIcon, Bars3Icon } from "@heroicons/react/24/solid";
+import { CiPhone } from "react-icons/ci";
 import AutoScrollHeader from "./AutoScrollHeader";
 import logo from "../assets/logo.png";
 
@@ -77,10 +78,25 @@ const Navbar = () => {
                 </li>
               )
             })}
-            {/* <button className="bg-[#af8a4a] hover:bg-[#af8a4a] text-white font-semibold px-4 lg:px-6 py-2 rounded text-sm lg:text-base">
-              Portfolio Login
-            </button> */}
+  <li>
+    <div
+      className="   border border-[var(--brand-gold)]
+      rounded-xl
+      flex items-center gap-2
+      text-[var(--brand-dark)]
+      hover:text-[var(--brand-gold)]
+      hover:border-[var(--brand-gold-dark)]
+      py-2 px-4
+      cursor-pointer
+      transition-all"
+      onClick={() => window.location.href = 'tel:+919080391749'}
+    >
+      <CiPhone className="text-lg" />
+      <span className="font-medium">+91 9080391749</span>
+    </div>
+  </li>
           </ul>
+         
 
           {/* Mobile Menu Icon */}
           <div className="flex md:hidden items-center gap-3">
