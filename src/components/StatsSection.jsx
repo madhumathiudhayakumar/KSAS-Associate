@@ -11,7 +11,7 @@ const stats = [
   { value: 400, label: "Happy Clients", icon: <BsEmojiSmile /> },
   { value: 3, label: "Insurance", icon: <FaHandHoldingUsd /> },
   { value: 10, label: "Mutual Fuds", icon: <AiOutlineFund /> },
-  { value: 3, label: "Bonds Platform", icon: <MdOutlineOutbond /> },
+  { value: 2, label: "Bonds Platform", icon: <MdOutlineOutbond /> },
 ];
 
 const StatsSection = () => {

@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 
 import emailjs from '@emailjs/browser';
-import ContactImage from "../assets/contact-image.jpg";
+import ContactImage from "../assets/contact-image.jpeg";
 import { AiFillCheckCircle } from "react-icons/ai";
 
 const Contactus = () => {

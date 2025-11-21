@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { FaArrowLeft, FaArrowRight } from "react-icons/fa";
+import TedTalksImage from "../assets/tedTalks.png";
 
 const TedTalks = () => {
   const talks = [
@@ -120,7 +121,7 @@ const TedTalks = () => {
         {/* RIGHT SIDE – IMAGE */}
         <div className="w-full h-full">
           <img
-            src="https://i.imgflip.com/2/7cufmd.jpg"
+            src={TedTalksImage}
             alt="TED Talks Illustration"
             className="w-full h-[450px] object-cover rounded-xl shadow-lg"
           />

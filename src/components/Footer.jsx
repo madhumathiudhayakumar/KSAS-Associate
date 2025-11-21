@@ -1,7 +1,8 @@
 import React from "react";
 import { Link, useLocation, useNavigate } from "react-router-dom";
 
-import { FaFacebookF, FaTwitter, FaInstagram } from "react-icons/fa";
+import { FaFacebookF, FaInstagram, FaWhatsapp } from "react-icons/fa";
+import { BiLogoGmail } from "react-icons/bi";
 import amfilogo from "../assets/amfi-logo.webp";
 import mutualfundlogo from "../assets/mutualfund-logo.webp";
 import logo from "../assets/logo.png";
@@ -65,27 +66,34 @@ const Footer = () => {
         {/* Description Section */}
         <div className="px-4 md:px-8 pb-8">
           <div className="mx-auto text-left space-y-4">
-            <p className="font-semibold text-[var(--brand-light)] text-left">
+            {/* <p className="font-semibold text-[var(--brand-light)] text-left">
               <span className="font-semibold text-[var(--brand-light)]">Fortuna Wealth Management</span> is an AMFI-registered Mutual Fund Distributor.
+            </p> */}
+
+            <p className="text-sm text-[var(--brand-gray-light)] leading-relaxed text-left">
+              <span className="font-semibold text-[var(--brand-light)]">Fortuna Wealth Management</span> makes no
+              warranties or representations, expressed or implied, regarding the products or services offered
+              through its platform. The firm shall not be held liable for any loss or damage arising from the
+              use of, or reliance on, any information, products, or related services provided. All website terms
+              and conditions apply.
             </p>
 
             <p className="text-sm text-[var(--brand-gray-light)] leading-relaxed text-left">
-              <span className="font-semibold text-[var(--brand-light)]">Disclaimer:</span>  Mutual fund
-              investments are subject to market risks. Investors are advised to read the scheme
-              information documents and all related materials carefully before investing.
-              Past performance does not guarantee future results. Please evaluate your individual
-              financial goals and risk tolerance before selecting a fund or creating an investment
-              portfolio.
+              We are not SEBI-registered investment advisors. We do not provide account handling services,
+              stock tips, trading calls, etc. All information shared is intended for general awareness
+              and educational purposes only.
             </p>
 
             <p className="text-sm text-[var(--brand-gray-light)] leading-relaxed text-left">
-              <span className="font-semibold text-[var(--brand-light)]">Fortuna Wealth Management</span> makes no warranties or representations, expressed
-              or implied, regarding the products or services offered through its platform.
-              The firm shall not be held liable for any loss or damage arising from the use of, or
-              reliance on, any information, products, or related services provided. All website terms
-              and conditions apply. Investments in securities markets are subject to market risks;
-              please read all associated documents carefully before making any investment decisions.
+              Investors are strongly advised to conduct their own research before making any investment
+              decisions. You are solely responsible for your investment decisions.
             </p>
+
+            <p className="text-sm text-[var(--brand-gray-light)] leading-relaxed text-left">
+              Investments in securities markets are subject to market risks; please read all associated
+              documents carefully before making any investment decisions.
+            </p>
+
           </div>
         </div>
 
@@ -131,26 +139,36 @@ const Footer = () => {
           </div>
 
           {/* Right side social icons */}
-          {/* <div className="flex justify-center sm:justify-end gap-4">
-      <a
-        href="#"
-        className="bg-gray-800 p-2 rounded hover:bg-yellow-600 transition"
-      >
-        <FaFacebookF className="text-white" />
-      </a>
-      <a
-        href="#"
-        className="bg-gray-800 p-2 rounded hover:bg-yellow-600 transition"
-      >
-        <FaTwitter className="text-white" />
-      </a>
-      <a
-        href="#"
-        className="bg-gray-800 p-2 rounded hover:bg-yellow-600 transition"
-      >
-        <FaInstagram className="text-white" />
-      </a>
-    </div> */}
+          <div className="flex justify-center sm:justify-end gap-4">
+            <a
+              href="https://wa.me/919080391749"
+              target="_blank"
+              className="bg-gray-800 p-2 rounded hover:bg-[var(--brand-gold)] transition"
+            >
+              <FaWhatsapp className="text-[var(--brand-light)] text-xl" />
+            </a>
+            <a
+              href="https://facebook.com/fortuna.wealth.org@gmail.com"
+              target="_blank"
+              className="bg-gray-800 p-2 rounded hover:bg-[var(--brand-gold)] transition"
+            >
+              <FaFacebookF className="text-[var(--brand-light)] text-xl" />
+            </a>
+            <a
+              href="https://instagram.com/fortuna.wealth.mgmt"
+              target="_blank"
+              className="bg-gray-800 p-2 rounded hover:bg-[var(--brand-gold)] transition"
+            >
+              <FaInstagram className="text-[var(--brand-light)] text-xl" />
+            </a>
+            <a
+               href="https://mail.google.com/mail/?view=cm&to=fortuna.wealth.org@gmail.com"
+               target="_blank"
+              className="bg-gray-800 p-2 rounded hover:bg-[var(--brand-gold)] transition"
+            >
+              <BiLogoGmail className="text-[var(--brand-light)] text-xl" />
+            </a>
+          </div>
         </div>
       </div>
     </footer>

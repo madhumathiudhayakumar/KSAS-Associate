@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 import { Link, useLocation, useNavigate } from "react-router-dom";
 
 import { XMarkIcon, Bars3Icon } from "@heroicons/react/24/solid";
-import { CiPhone } from "react-icons/ci";
+import { IoLogoWhatsapp } from "react-icons/io";
 import AutoScrollHeader from "./AutoScrollHeader";
 import logo from "../assets/logo.png";
 
@@ -91,7 +91,7 @@ const Navbar = () => {
       transition-all"
       onClick={() => window.location.href = 'tel:+919080391749'}
     >
-      <CiPhone className="text-lg" />
+      <IoLogoWhatsapp className="text-green-500 text-xl" />
       <span className="font-medium">+91 9080391749</span>
     </div>
   </li>
