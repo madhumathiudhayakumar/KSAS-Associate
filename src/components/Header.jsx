@@ -14,9 +14,9 @@ const Header = () => {
       <div className="absolute inset-0 bg-[var(--brand-dark)]/60"></div>
 
       {/* Content */}
-      <div data-aos="fade-down"
+      <div data-aos="zoom-out-down"
         data-aos-easing="linear"
-        data-aos-duration="1500" className="relative z-10 max-w-3xl text-left text-[var(--brand-light)]">
+        data-aos-duration="3000" className="relative z-10 max-w-3xl text-left text-[var(--brand-light)]">
         <h1 className="text-3xl md:text-5xl font-bold leading-tight ">
           We help you to manage your portfolio and invest wisely.
         </h1>

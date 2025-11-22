@@ -4,12 +4,14 @@ import fortunaImage from "../assets/fortuna-img.jpeg";
 const OurPhilosophy = () => {
   return (
     // <section className="py-16  bg-[var(--brand-light)]">
-    <section className="py-16 bg-[var(--brand-light)] ">
-      <div data-aos="fade-down"
+    <section className="py-6 bg-[var(--brand-light)]">
+      <div
+        data-aos="fade-up"
         data-aos-easing="linear"
-        data-aos-duration="1500" className="text-center px-6 relative bg-[var(--brand-light)] pt-8 pb-6 rounded-xl shadow-[0_0_20px_rgba(0,0,0,0.2)] transition-all duration-300">
+        data-aos-duration="1500"
+        className="text-center px-6 relative bg-[var(--brand-light)] pt-8 pb-6 rounded-xl transition-all duration-300"
+      >
         <div className="grid md:grid-cols-2 gap-12 items-center">
-
           {/* LEFT SIDE IMAGE */}
           <div className="relative">
             <img
@@ -34,35 +36,38 @@ const OurPhilosophy = () => {
 
             <p className="mb-4 text-left md:text-left">
               <strong>Fortuna</strong> is the ancient Roman goddess of
-              <strong> prosperity, destiny, and good fortune</strong>—a timeless reminder
-              that life’s greatest rewards come to those who are prepared.
-              She symbolizes the belief that good luck is <em>not random</em> but the
-              result of clarity, effort, and wise choices.
+              <strong> prosperity, destiny, and good fortune</strong>—a timeless
+              reminder that life’s greatest rewards come to those who are
+              prepared. She symbolizes the belief that good luck is{" "}
+              <em>not random</em> but the result of clarity, effort, and wise
+              choices.
             </p>
 
             <p className="mb-4 text-left md:text-left">
-              At <strong>Fortuna Wealth Management</strong>, my goal is to provide
-              clear, practical, and personalized financial planning.
-              We embrace this philosophy.
-              We believe that <strong>Knowledge, Discipline, and Patience bring Good Luck</strong>—the
-              qualities that transform opportunities into long-term success.
+              At <strong>Fortuna Wealth Management</strong>, my goal is to
+              provide clear, practical, and personalized financial planning. We
+              embrace this philosophy. We believe that{" "}
+              <strong>
+                Knowledge, Discipline, and Patience bring Good Luck
+              </strong>
+              —the qualities that transform opportunities into long-term
+              success.
             </p>
 
             <p className="mb-4 text-left md:text-left">
-              Like the guidance of the goddess herself, my approach helps you navigate
-              your financial journey with confidence, purpose, and strategy.
+              Like the guidance of the goddess herself, my approach helps you
+              navigate your financial journey with confidence, purpose, and
+              strategy.
             </p>
 
             <p className="font-semibold text-left md:text-left">
-              <strong>Fortuna:</strong> Where wisdom meets wealth, and preparation creates prosperity.
+              <strong>Fortuna:</strong> Where wisdom meets wealth, and
+              preparation creates prosperity.
             </p>
           </div>
-
         </div>
       </div>
     </section>
-
-
-  )
-}
+  );
+};
 export default OurPhilosophy;

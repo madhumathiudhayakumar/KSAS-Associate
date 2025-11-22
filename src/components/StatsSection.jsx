@@ -43,8 +43,8 @@ const StatsSection = () => {
 
   return (
     <section className="py-10 bg-[var(--brand-light)]">
-      <div data-aos="fade-down"
-        data-aos-easing="linear"
+      <div data-aos="fade-up"
+        data-aos-easing="ease-in"
         data-aos-duration="1500" className="container mx-auto grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-8 px-6">
         {stats.map((item, i) => (
           <div

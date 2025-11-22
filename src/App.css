@@ -13,3 +13,17 @@ html {
   --brand-gray-light: #D1D5DB;
 
 }
+
+.slide-transition {
+  transition: all 0.35s ease-in-out;
+}
+
+.slide-left {
+  opacity: 0;
+  transform: translateX(-60px);
+}
+
+.slide-right {
+  opacity: 0;
+  transform: translateX(60px);
+}

@@ -16,11 +16,11 @@ const navLinks = [
 ];
 
 const Navbar = () => {
-  const location = useLocation()
+  const location = useLocation();
   const navigate = useNavigate();
-  const currentHash = location.hash || (location.pathname === "/" ? "#header" : "");
+  const currentHash =
+    location.hash || (location.pathname === "/" ? "#header" : "");
   const [isMenuOpen, setIsMenuOpen] = useState(false);
-
 
   const handleNavClick = (href) => {
     if (isMenuOpen) {
@@ -42,18 +42,19 @@ const Navbar = () => {
 
   return (
     <>
-      <nav className="w-full bg-[var(--brand-light)] shadow-sm  top-0 left-0 z-50">
-        {location?.pathname !== "/privacy-policy" && location?.pathname !== "/terms-condition" && location.pathname !== "/application-form"
-          && <AutoScrollHeader />}
-        <div className="max-w-7xl mx-auto flex items-center justify-between px-4 sm:px-6 md:px-10 py-3 md:py-4">
+      <nav className="fixed w-full bg-[var(--brand-light)] shadow-sm  top-0 left-0 z-50">
+        {location?.pathname !== "/privacy-policy" &&
+          location?.pathname !== "/terms-condition" &&
+          location.pathname !== "/application-form" && <AutoScrollHeader />}
+        <div className="max-w-7xl mx-auto flex items-center justify-between">
           {/* Logo Section */}
           {/* <div className="flex items-center gap-2">
             <div className="flex items-center space-x-2 px-4 py-2"> */}
-          <div className="rounded-full w-20 h-20 flex items-center justify-center">
+          <div className="rounded-full w-25 h-25 flex items-center justify-center">
             <img
               src={logo}
               alt="Logo"
-              className="w-24 h-24 object-contain rounded-full p-2 cursor-pointer"
+              className="w-34 h-34 object-contain rounded-full p-2 cursor-pointer"
               onClick={() => handleNavClick("#header")}
             />
           </div>
@@ -70,17 +71,23 @@ const Navbar = () => {
                 : location.pathname === link.href;
               return (
                 <li key={link.name}>
-                  <Link to={isSectionLink ? "/" : link.href}
+                  <Link
+                    to={isSectionLink ? "/" : link.href}
                     onClick={() => handleNavClick(link.href)}
-                    className={`transition-colors duration-200 ${isActive ? "text-[var(--brand-gold)] font-semibold" : "hover:text-[var(--brand-gold-dark)]"
-                      }`}>
-                    {link.name}</Link>
+                    className={`transition-colors duration-200 ${
+                      isActive
+                        ? "text-[var(--brand-gold)] font-semibold"
+                        : "hover:text-[var(--brand-gold-dark)]"
+                    }`}
+                  >
+                    {link.name}
+                  </Link>
                 </li>
-              )
+              );
             })}
-  <li>
-    <div
-      className="   border border-[var(--brand-gold)]
+            <li>
+              <div
+                className="   border border-[var(--brand-gold)]
       rounded-xl
       flex items-center gap-2
       text-[var(--brand-dark)]
@@ -89,14 +96,13 @@ const Navbar = () => {
       py-2 px-4
       cursor-pointer
       transition-all"
-      onClick={() => window.location.href = 'tel:+919080391749'}
-    >
-      <IoLogoWhatsapp className="text-green-500 text-xl" />
-      <span className="font-medium">+91 9080391749</span>
-    </div>
-  </li>
+                onClick={() => (window.location.href = "tel:+919080391749")}
+              >
+                <IoLogoWhatsapp className="text-green-500 text-xl" />
+                <span className="font-medium">+91 9080391749</span>
+              </div>
+            </li>
           </ul>
-         
 
           {/* Mobile Menu Icon */}
           <div className="flex md:hidden items-center gap-3">
@@ -114,15 +120,12 @@ const Navbar = () => {
       {isMenuOpen && (
         <div className="fixed inset-0 bg-[var(--brand-dark)] bg-opacity-50 z-50 flex justify-end p-4">
           <div className="bg-[var(--brand-light)] w-full sm:w-full h-full relative transition-transform duration-300 ease-in-out">
-
             {/* ✅ Full-width black row */}
             <div className="w-full bg-[var(--brand-dark)] p-4 flex justify-end items-center">
-
               {/* ✅ Close Button */}
               <button onClick={() => setIsMenuOpen(false)}>
                 <XMarkIcon className="h-8 w-8 text-[var(--brand-light)]" />
               </button>
-
             </div>
 
             {/* ✅ Menu Links */}
@@ -135,13 +138,19 @@ const Navbar = () => {
                   : location.pathname === link.href;
                 return (
                   <li key={link.name}>
-                    <Link to={isSectionLink ? "/" : link.href}
+                    <Link
+                      to={isSectionLink ? "/" : link.href}
                       onClick={() => handleNavClick(link.href)}
-                      className={`transition-colors duration-200 ${isActive ? "text-[var(--brand-gold)] font-semibold" : "hover:text-[var(--brand-gold-dark)]"
-                        }`}>
-                      {link.name}</Link>
+                      className={`transition-colors duration-200 ${
+                        isActive
+                          ? "text-[var(--brand-gold)] font-semibold"
+                          : "hover:text-[var(--brand-gold-dark)]"
+                      }`}
+                    >
+                      {link.name}
+                    </Link>
                   </li>
-                )
+                );
               })}
             </ul>
           </div>

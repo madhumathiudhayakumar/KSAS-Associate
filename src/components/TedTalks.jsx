@@ -10,7 +10,7 @@ const TedTalks = () => {
       summary:
         "Essential financial literacy: budgeting, saving, and investing basics everyone should know.",
       category: "Financial Literacy",
-      speakerImage: "https://media.wnyc.org/i/800/0/l/85/1/AlexavonTobel.jpg"
+      speakerImage: "https://media.wnyc.org/i/800/0/l/85/1/AlexavonTobel.jpg",
     },
     {
       title: "Saving for Tomorrow, Tomorrow",
@@ -18,8 +18,8 @@ const TedTalks = () => {
       summary:
         "Behavioral finance insights on automating savings and overcoming procrastination.",
       category: "Behavioral Finance",
-      speakerImage: "https://anderson-review.ucla.edu/wp-content/uploads/2020/07/shlomo-benartzi.jpg"
-
+      speakerImage:
+        "https://anderson-review.ucla.edu/wp-content/uploads/2020/07/shlomo-benartzi.jpg",
     },
     {
       title: "How to Buy Happiness",
@@ -27,8 +27,8 @@ const TedTalks = () => {
       summary:
         "Shows how smart spending—on experiences or helping others—can maximize well-being.",
       category: "Well-Being",
-      speakerImage: "https://michaelnorton.com/wp-content/uploads/2022/09/michaelnorton2.jpg"
-
+      speakerImage:
+        "https://michaelnorton.com/wp-content/uploads/2022/09/michaelnorton2.jpg",
     },
     {
       title: "The Psychology of Your Future Self",
@@ -36,8 +36,8 @@ const TedTalks = () => {
       summary:
         "Helps make smarter long-term financial decisions by understanding how your future self will think.",
       category: "Future Self",
-      speakerImage: "https://techcrunch.com/wp-content/uploads/2012/12/dan-gilbert-headshot.jpg"
-
+      speakerImage:
+        "https://techcrunch.com/wp-content/uploads/2012/12/dan-gilbert-headshot.jpg",
     },
     {
       title: "Why We Do What We Do",
@@ -45,8 +45,7 @@ const TedTalks = () => {
       summary:
         "Explores the motivations behind decisions, including financial choices, and how to take control of them.",
       category: "Motivation",
-      speakerImage: "https://wallpapercave.com/wp/wp6312690.jpg"
-
+      speakerImage: "https://wallpapercave.com/wp/wp6312690.jpg",
     },
   ];
 
@@ -60,57 +59,93 @@ const TedTalks = () => {
     setIndex((prev) => (prev - 1 + talks.length) % talks.length);
   };
 
+  const [isSliding, setIsSliding] = useState(false);
+  const [slideDirection, setSlideDirection] = useState("right"); // "right" or "left"
+
+  const handleNext = () => {
+    setSlideDirection("right");
+    setIsSliding(true);
+
+    setTimeout(() => {
+      nextTalk(); // your existing function that updates talk
+      setIsSliding(false);
+    }, 350); // match animation duration
+  };
+
+  const handlePrev = () => {
+    setSlideDirection("left");
+    setIsSliding(true);
+
+    setTimeout(() => {
+      prevTalk(); // your existing function that updates talk
+      setIsSliding(false);
+    }, 350);
+  };
+
   const talk = talks[index];
 
   return (
     <section className="w-full bg-[var(--brand-dark)] py-16">
-      <div data-aos="fade-down"
+      <div
+        data-aos="fade-up"
         data-aos-easing="linear"
-        data-aos-duration="1500" className="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-12 items-center px-6">
-
+        data-aos-duration="1500"
+        className="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-12 items-center px-6"
+      >
         {/* LEFT SIDE – TEXT */}
         <div>
-          <h2 className="text-3xl font-bold text-[var(--brand-light)] mb-6 text-left md:text-left"> RECOMMENDED TED TALKS</h2>
-          {/* <h4 className="text-sm font-semibold text-[var(--brand-light)] tracking-wide">
+          <h2 className="text-3xl font-bold text-[var(--brand-light)] mb-6 text-left md:text-left">
             RECOMMENDED TED TALKS
-          </h4> */}
+          </h2>
+
           <div className="w-16 h-1 bg-[var(--brand-gold)] mt-2 mb-6 md:mx-0 mx-auto"></div>
 
           <h4 className="text-3xl font-semibold text-[var(--brand-light)] mt-2 leading-tight">
             Insightful Talks To Transform <br /> Your Financial Mindset.
           </h4>
+          <div
+            className={`slide-transition ${
+              isSliding
+                ? slideDirection === "right"
+                  ? "slide-right"
+                  : "slide-left"
+                : ""
+            }`}
+          >
+            <div className="mt-6 inline-block bg-gray-100 text-gray-800 px-4 py-1 text-sm rounded-full">
+              {talk.category}
+            </div>
 
-          <div className="mt-6 inline-block bg-gray-100 text-gray-800 px-4 py-1 text-sm rounded-full">
-            {talk.category}
+            <p className="text-lg text-[var(--brand-light)] mt-6 leading-relaxed">
+              <span className="text-[var(--brand-light)] text-lg italic">
+                “ {talk.title} ”
+              </span>{" "}
+              – {talk.summary}
+            </p>
+
+            {/* Speaker Name + Avatar */}
+            <div className="flex items-center gap-3 mt-6">
+              <img
+                src={talk.speakerImage}
+                alt={talk.speaker}
+                className="w-12 h-12 rounded-full object-contain border-2 border-[var(--brand-gold)]"
+              />
+              <p className="font-semibold text-[var(--brand-light)]">
+                {talk.speaker}
+              </p>
+            </div>
           </div>
-
-          <p className="text-lg text-[var(--brand-light)] mt-6 leading-relaxed">
-            <span className="text-[var(--brand-light)] text-lg italic">" {talk.title} "</span> – {talk.summary}
-          </p>
-
-{/* Speaker Name + Avatar */}
-<div className="flex items-center gap-3 mt-6">
-  <img
-    src={talk.speakerImage}
-    alt={talk.speaker}
-    className="w-12 h-12 rounded-full object-contain border-2 border-[var(--brand-gold)]"
-  />
-  <p className="font-semibold text-[var(--brand-light)]">
-    {talk.speaker}
-  </p>
-</div>
-
           {/* ARROWS */}
           <div className="flex items-center gap-6 mt-8">
             <button
-              onClick={prevTalk}
+              onClick={handlePrev} // updated
               className="text-[var(--brand-light)] text-xl hover:text-[var(--brand-gold)] transition cursor-pointer"
             >
               <FaArrowLeft />
             </button>
 
             <button
-              onClick={nextTalk}
+              onClick={handleNext} // updated
               className="text-[var(--brand-light)] text-xl hover:text-[var(--brand-gold)] transition cursor-pointer"
             >
               <FaArrowRight />
@@ -119,7 +154,7 @@ const TedTalks = () => {
         </div>
 
         {/* RIGHT SIDE – IMAGE */}
-        <div className="w-full h-full">
+        <div className={`w-full h-full slide-transition`}>
           <img
             src={TedTalksImage}
             alt="TED Talks Illustration"

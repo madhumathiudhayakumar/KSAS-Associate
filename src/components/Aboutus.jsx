@@ -13,7 +13,7 @@ const AboutUsSection = () => {
       <div className="absolute inset-0 bg-[var(--brand-dark)] transform -skew-y-3 origin-top-left"></div>
 
       {/* Content */}
-      <div data-aos="fade-down"
+      <div data-aos="fade-up"
         data-aos-easing="linear"
         data-aos-duration="1500" className="relative container mx-auto px-6 md:px-12">
         <div className="grid md:grid-cols-2 gap-12 mb-12">

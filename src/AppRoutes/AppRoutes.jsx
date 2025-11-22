@@ -6,7 +6,7 @@ import PrivacyPolicy from "../screens/PrivacyPolicy";
 import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
 import TermsAndCondition from "../screens/TermsAndConditions";
-import ClientContactForm from "../ClientForm/ClientContactForm";
+// import ClientContactForm from "../ClientForm/ClientContactForm";
 
 const AppRoutes = () => {
   return (
@@ -18,7 +18,7 @@ const AppRoutes = () => {
           <Route path="/" element={<HomeScreen />} />
           <Route path="/terms-condition" element={<TermsAndCondition />} />
           <Route path="/privacy-policy" element={<PrivacyPolicy />} />
-          <Route path="/application-form" element={<ClientContactForm />} />
+          {/* <Route path="/application-form" element={<ClientContactForm />} /> */}
           {/* </main> */}
         </Routes>
         <Footer />

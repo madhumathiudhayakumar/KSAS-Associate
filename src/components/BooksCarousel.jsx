@@ -62,7 +62,7 @@ const BooksCarousel = () => {
   return (
     <section className="bg-[var(--brand-dark)] py-16">
       {/* Heading */}
-      <div data-aos="fade-down"
+      <div data-aos="fade-up"
         data-aos-easing="linear"
         data-aos-duration="1500">
         <p className="text-center text-[var(--brand-light)] text-lg italic mb-6 px-4">
