@@ -8,7 +8,7 @@ import "swiper/css/pagination";
 const books = [
   {
     title: "Rich Dad Poor Dad",
-    author: "Robert T. Kiyosaki",
+    author: "Robert Kiyosaki",
     img: "https://m.media-amazon.com/images/I/81bsw6fnUiL.jpg",
   },
   {
@@ -17,58 +17,67 @@ const books = [
     img: "https://m.media-amazon.com/images/I/81tFODgVbHL._SL1500_.jpg",
   },
   {
-    title: "The Millionaire Next Door",
-    author: "Thomas J. Stanley & William D. Danko",
-    img: "https://cdnagesdb.com/images/booksimages/f8eb9b08853da4ad919554d67b3c66b0.webp",
-  },
-  {
     title: "The Psychology of Money",
     author: "Morgan Housel",
     img: "https://m.media-amazon.com/images/I/81Lb75rUhLL.jpg",
   },
   {
-    title: "Your Money or Your Life",
-    author: "Vicki Robin & Joe Dominguez",
-    img: "https://yourmoneyoryourlife.com/wp-content/uploads/2018/02/BOOK.png",
+    title: "Think and Grow Rich",
+    author: "Napoleon Hill",
+    img: "https://m.media-amazon.com/images/I/71UypkUjStL.jpg",
   },
   {
-    title: "I Will Teach You to Be Rich",
-    author: "Ramit Sethi",
-    img: "https://bookstohomeindia.b-cdn.net/wp-content/uploads/2024/06/81c9SSbG3OL._AC_UF10001000_QL80_-500x500.webp.webp",
-  },
-  {
-    title: "The Simple Path to Wealth",
-    author: "JL Collins",
+    title: "The Millionaire Next Door",
+    author: "Thomas J. Stanley & William D. Danko",
     img: "https://m.media-amazon.com/images/I/612d8bFlpaL._SY385_.jpg",
   },
   {
-    title: "You’re So Money",
-    author: "Farnoosh Torabi",
-    img: "https://s2982.pcdn.co/wp-content/uploads/2020/08/youre-so-money-by-farnoosh-torabi-book-cover.jpg.optimal.jpg",
+    title: "Let’s Talk Money",
+    author: "Monica Halan",
+    img: "https://m.media-amazon.com/images/I/81P1wIvmAHL.jpg",
   },
   {
-    title: "The Wealthy Gardener",
-    author: "John Soforic",
-    img: "https://m.media-amazon.com/images/I/41EnWvtIZ-L.jpg",
+    title: "The Power of Your Subconscious Mind",
+    author: "Dr. Joseph Murphy",
+    img: "https://m.media-amazon.com/images/I/71sBtM3Yi5L.jpg",
   },
   {
-    title: "The Total Money Makeover",
-    author: "Dave Ramsey",
-    img: "https://www.shespeaks.com/pages/img/review/IMG_2588_05232015002849.JPG",
+    title: "The Magic of Believing",
+    author: "M. Claude Bristol",
+    img: "https://m.media-amazon.com/images/I/71zNk6abHPL.jpg",
+  },
+  {
+    title: "The Secret",
+    author: "Rhonda Byrne",
+    img: "https://m.media-amazon.com/images/I/81fdQIY6ykL.jpg",
+  },
+  {
+    title: "The Magic",
+    author: "Rhonda Byrne",
+    img: "https://m.media-amazon.com/images/I/81O-MJ5QaqL.jpg",
+  },
+  {
+    title: "Miracle Morning",
+    author: "Hal Elrod",
+    img: "https://m.media-amazon.com/images/I/71fT6F4b-UL.jpg",
+  },
+  {
+    title: "The Silva Mind Control Method",
+    author: "Jose Silva",
+    img: "https://m.media-amazon.com/images/I/71G0Qe8U8hL.jpg",
   },
 ];
 
 const BooksCarousel = () => {
   return (
-    <section className="bg-[var(--brand-dark)] py-16">
+    <section className="bg-[var(--brand-light)] py-10">
       {/* Heading */}
-      <div data-aos="fade-up"
-        data-aos-easing="linear"
-        data-aos-duration="1500">
-        <p className="text-center text-[var(--brand-light)] text-lg italic mb-6 px-4">
-          “An investment in knowledge pays the best interest.” — Benjamin Franklin
+      <div >
+        <p className="text-center text-[var(--brand-dark)] text-lg italic mb-6 px-4">
+          “An investment in knowledge pays the best interest.” — Benjamin
+          Franklin
         </p>
-        <h2 className="text-center text-[var(--brand-light)] text-2xl md:text-4xl font-bold">
+        <h2 className="text-center text-[var(--brand-dark)] text-2xl md:text-4xl font-bold">
           {/* TOP FINANCIAL BOOKS */}
           RECOMMENDED BOOKS
         </h2>
@@ -77,7 +86,7 @@ const BooksCarousel = () => {
         <div className="w-14 h-1 bg-[var(--brand-gold)] mx-auto mt-2 mb-10 rounded-full"></div>
 
         <div className="container mx-auto px-4">
-          <div className="relative pb-12">
+          <div className="relative">
             <Swiper
               modules={[Navigation, Pagination, Autoplay]}
               slidesPerView={1}
@@ -92,8 +101,10 @@ const BooksCarousel = () => {
             >
               {books.map((book, index) => (
                 <SwiperSlide key={index} className="h-auto">
-                  <div className="bg-[var(--brand-light)] rounded-xl p-6 shadow-xl hover:shadow-2xl transition-all duration-300 
-                    text-center flex flex-col items-center justify-between h-full">
+                  <div
+                    className="bg-[var(--brand-light)] rounded-xl p-6 shadow-xl hover:shadow-2xl transition-all duration-300 
+                    text-center flex flex-col items-center justify-between h-full"
+                  >
                     {/* Book Cover */}
                     <img
                       src={book.img}
@@ -103,7 +114,7 @@ const BooksCarousel = () => {
 
                     {/* Book Info */}
                     <div className="flex flex-col flex-grow justify-between">
-                      <h3 className="text-lg font-semibold text-[var(--brand-dark)] line-clamp-2">
+                      <h3 className="text-lg font-semibold text-[var(--brand-light)] line-clamp-2">
                         {book.title}
                       </h3>
                       <p className="text-[var(--brand-gray)] text-sm mt-2">
@@ -113,7 +124,6 @@ const BooksCarousel = () => {
                   </div>
                 </SwiperSlide>
               ))}
-
             </Swiper>
 
             {/* Pagination styling */}

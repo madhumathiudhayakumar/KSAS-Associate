@@ -87,9 +87,9 @@ const TedTalks = () => {
   return (
     <section className="w-full bg-[var(--brand-dark)] py-16">
       <div
-        data-aos="fade-up"
-        data-aos-easing="linear"
-        data-aos-duration="1500"
+        // data-aos="fade-up"
+        // data-aos-easing="linear"
+        // data-aos-duration="1500"
         className="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-12 items-center px-6"
       >
         {/* LEFT SIDE – TEXT */}

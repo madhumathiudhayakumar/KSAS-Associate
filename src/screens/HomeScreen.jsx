@@ -26,30 +26,30 @@ const HomeScreen = () => {
       <section id="aboutus" className="scroll-mt-24">
         <AboutUsSection />
       </section>
-      <section id="services" className="scroll-mt-24">
-        <Services />
-      </section>
-      <section id="bookscarousel" className="scroll-mt-24">
-        <BooksCarousel />
-      </section>
-      <section id="recommendedmovies" className="scroll-mt-24">
-        <RecommendedMovies />
-      </section>
-      <section>
-        <TedTalks />
-      </section>
       <section id="ourphilosophy" className="scroll-mt-24">
         <OurPhilosophy />
-      </section>
-      <section id="contactus" className="scroll-mt-24">
-        <Contactus />
       </section>
       <section id="aboutme" className="scroll-mt-24">
         <Aboutme />
       </section>
       <section id="services" className="scroll-mt-24">
-        <RecommendedDocumentaries />
+        <Services />
       </section>
+      {/* <section id="recommendedmovies" className="scroll-mt-24">
+        <RecommendedMovies />
+      </section> */}
+      {/* <section>
+        <TedTalks />
+      </section> */}
+      <section id="contactus" className="scroll-mt-24">
+        <Contactus />
+      </section>
+      <section id="bookscarousel" className="scroll-mt-24">
+        <BooksCarousel />
+      </section>
+      {/* <section id="services" className="scroll-mt-24">
+        <RecommendedDocumentaries />
+      </section> */}
       <ScrollToTopButton />
     </div>
   );

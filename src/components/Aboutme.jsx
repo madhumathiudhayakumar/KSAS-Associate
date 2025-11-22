@@ -1,17 +1,17 @@
 import React from "react";
 import { BsSunFill } from "react-icons/bs";
-import ownerImage from "../assets/owner.JPG";   
+import ownerImage from "../assets/owner.JPG";
 
 const AboutMe = () => {
   return (
-    <section className="py-16 bg-[var(--brand-light)]">
+    <section className="py-16 bg-[var(--brand-dark)]">
       <div
-        data-aos="fade-up"
-        data-aos-easing="linear"
-        data-aos-duration="1500"
+        // data-aos="fade-up"
+        // data-aos-easing="linear"
+        // data-aos-duration="1500"
         className="text-center flex flex-col items-center relative rounded-xl transition-all duration-300"
       >
-        <h2 className="text-2xl md:text-4xl font-bold text-[var(--brand-dark)]">
+        <h2 className="text-2xl md:text-4xl font-bold text-[var(--brand-light)]">
           ABOUT ME
         </h2>
 
@@ -21,18 +21,16 @@ const AboutMe = () => {
         {/* --- Top Section --- */}
         <div className="container mx-auto grid grid-cols-1 md:grid-cols-[auto_1fr] gap-20 items-start px-4 md:px-6">
           {/* LEFT — IMAGE */}
-          <div className="flex flex-col items-center md:items-start">
+          <div className="flex flex-col items-center md:items-center mt-10">
             <img
               src={ownerImage}
               alt="Profile"
-              className="w-100 h-auto rounded-xl shadow-lg object-cover"
+              className="w-50 h-auto rounded-xl shadow-lg object-cover"
             />
-
-            {/* NAME BELOW THE IMAGE */}
-            <h3 className="mt-6 px-18 text-xl font-semibold text-[var(--brand-dark)] text-center w-120 md:text-left">
-              MR. S. KALIMUTHU, M.Com
+            <h3 className="mt-6 text-xl font-semibold text-[var(--brand-light)] text-center w-150 md:text-center">
+              Mr. S. KALIMUTHU, M.Com
             </h3>
-            <div className="mt-4 space-y-3 text-[var(--brand-dark)] w-100">
+            <div className="mt-4 space-y-3 text-[var(--brand-light)] w-100">
               {/* <div className="flex justify-between border-b border-[var(--brand-gold)] pb-0.5">
                 <span className="font-semibold">Qualifications</span>
                 <span>M.Com</span>
@@ -43,17 +41,17 @@ const AboutMe = () => {
                 <span>20+ years</span>
               </div>
 
-              <div className="flex justify-between border-b border-[var(--brand-gold)] pb-0.5">
+              {/* <div className="flex justify-between border-b border-[var(--brand-gold)] pb-0.5">
                 <span className="font-semibold">Availability</span>
                 <span>MON – SAT (09:00 AM – 06:00 PM)</span>
-              </div>
+              </div> */}
             </div>
           </div>
 
           {/* RIGHT — DETAILS */}
           <div className="text-left">
             {/* Bullet Points Section */}
-            <div className="mt-6 text-[var(--brand-dark)] leading-relaxed">
+            <div className="mt-6 text-[var(--brand-light)] leading-relaxed">
               <ul className="space-y-4 text-left">
                 {[
                   "Completed M.Com in 2003.",

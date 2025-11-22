@@ -10,12 +10,12 @@ import logo from "../assets/logo.png";
 const Footer = () => {
   const location = useLocation()
   const navigate = useNavigate();
-  const Links = [
-    { name: "Home", href: "#header" },
-    { name: "About Us", href: "#aboutus" },
-    { name: "Services", href: "#services" },
-    { name: "Privacy Policy", href: "/privacy-policy" },
-  ];
+  // const Links = [
+  //   { name: "Home", href: "#header" },
+  //   { name: "About Us", href: "#aboutus" },
+  //   { name: "Services", href: "#services" },
+  //   { name: "Privacy Policy", href: "/privacy-policy" },
+  // ];
 
   const handleNavClick = (href) => {
     if (location.pathname === "/") {
@@ -32,7 +32,7 @@ const Footer = () => {
   };
 
   return (
-    <footer className="bg-[var(--brand-gray-dark)] text-[var(--brand-gray-light)] pt-10 mt-15">
+    <footer className="bg-[var(--brand-gray-dark)] text-[var(--brand-gray-light)] pt-10">
       <div className="bg-[var(--brand-gray-dark)] max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
         <div className="flex justify-center mb-6">
           <div className="flex flex-col items-center">
@@ -47,7 +47,7 @@ const Footer = () => {
           </div>
         </div>
 
-        <ul className="flex flex-wrap justify-center gap-6 text-sm sm:text-base mb-8">
+        {/* <ul className="flex flex-wrap justify-center gap-6 text-sm sm:text-base mb-8">
           {Links.map((link) => (
             <li key={link.name}>
               <Link
@@ -59,7 +59,7 @@ const Footer = () => {
               </Link>
             </li>
           ))}
-        </ul>
+        </ul> */}
 
         <hr className="border-[var(--brand-light)] mb-8" />
 
@@ -148,7 +148,7 @@ const Footer = () => {
               <FaWhatsapp className="text-[var(--brand-light)] text-xl" />
             </a>
             <a
-              href="https://facebook.com/fortuna.wealth.org@gmail.com"
+              href="https://www.facebook.com/profile.php?id=61584126595452"
               target="_blank"
               className="bg-gray-800 p-2 rounded hover:bg-[var(--brand-gold)] transition"
             >

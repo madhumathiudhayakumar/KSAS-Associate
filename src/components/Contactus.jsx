@@ -116,16 +116,11 @@ const Contactus = () => {
                 <div className="relative z-10">
                   {/* Header Section */}
                   <div className="flex items-center gap-4">
-                    <div
-                      className="
-            h-20 w-20 rounded-full overflow-hidden 
-            border-4 border-[var(--brand-gold)] shadow-[0_0_12px_rgba(215,154,106,0.6)]
-          "
-                    >
+                    <div className="h-24 w-24 rounded-full bg-red overflow-hidden border-4 border-[var(--brand-gold)] shadow-[0_0_12px_rgba(215,154,106,0.6)]">
                       <img
                         src={ownerImage}
                         alt="avatar"
-                        className="w-full h-full object-cover"
+                        className="w-24 h-27 object-cover mt-0"
                       />
                     </div>
 
@@ -139,7 +134,7 @@ const Contactus = () => {
 
                   {/* Address */}
                   <div className="mt-5 text-sm text-gray-300 space-y-1">
-                    <p>12, Lakshmana Perumal Kovil Street</p>
+                    <p>Lakshmana Perumal Kovil Street</p>
                     <p>Rajapalayam – 626 117, Tamil Nadu</p>
                     <p>India</p>
                   </div>
@@ -166,7 +161,8 @@ const Contactus = () => {
                       Mon–Sat: 9:00 AM — 6:00 PM IST
                     </div>
                     <p className="mt-1 text-gray-400 italic text-xs">
-                      For other timezones, send a WhatsApp message to schedule.
+                      For other timezones, send a WhatsApp message to schedule
+                      the meeting accordingly.
                     </p>
                   </div>
                 </div>

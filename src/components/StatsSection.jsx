@@ -6,7 +6,6 @@ import { AiOutlineInsurance, AiOutlineFund } from "react-icons/ai";
 import { MdOutlineOutbond } from "react-icons/md";
 import { FaHandHoldingUsd } from "react-icons/fa";
 
-
 const stats = [
   { value: 400, label: "Happy Clients", icon: <BsEmojiSmile /> },
   { value: 3, label: "Insurance", icon: <FaHandHoldingUsd /> },
@@ -15,7 +14,6 @@ const stats = [
 ];
 
 const StatsSection = () => {
-
   const CountUp = ({ end, duration = 2000 }) => {
     const [count, setCount] = useState(0);
 
@@ -43,9 +41,12 @@ const StatsSection = () => {
 
   return (
     <section className="py-10 bg-[var(--brand-light)]">
-      <div data-aos="fade-up"
-        data-aos-easing="ease-in"
-        data-aos-duration="1500" className="container mx-auto grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-8 px-6">
+      <div
+        //  data-aos="fade-up"
+        //   data-aos-easing="ease-in"
+        //   data-aos-duration="1500"
+        className="container mx-auto grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-8 px-6"
+      >
         {stats.map((item, i) => (
           <div
             key={i}
@@ -56,12 +57,14 @@ const StatsSection = () => {
               {item.icon}
             </div>
             <h2 className="text-4xl font-bold text-[var(--brand-dark)]">
-              <CountUp end={item.value} duration={1500} />{item.label === "Happy Clients" && "+"}             </h2>
+              <CountUp end={item.value} duration={1500} />
+              {"+"}
+            </h2>
             <p className="text-[var(--brand-gray)] mt-2">{item.label}</p>
           </div>
         ))}
       </div>
     </section>
   );
-}
+};
 export default StatsSection;

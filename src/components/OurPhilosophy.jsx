@@ -6,9 +6,9 @@ const OurPhilosophy = () => {
     // <section className="py-16  bg-[var(--brand-light)]">
     <section className="py-6 bg-[var(--brand-light)]">
       <div
-        data-aos="fade-up"
-        data-aos-easing="linear"
-        data-aos-duration="1500"
+        // data-aos="fade-up"
+        // data-aos-easing="linear"
+        // data-aos-duration="1500"
         className="text-center px-6 relative bg-[var(--brand-light)] pt-8 pb-6 rounded-xl transition-all duration-300"
       >
         <div className="grid md:grid-cols-2 gap-12 items-center">
@@ -24,16 +24,13 @@ const OurPhilosophy = () => {
 
           {/* RIGHT SIDE CONTENT */}
           <div className="text-[var(--brand-dark)]">
-            <p className="italic text-center md:text-left text-[var(--brand-gray)] mb-3">
-              "Be wise. Be disciplined. Build your luck."
-            </p>
-
-            <h2 className="text-3xl font-bold mb-6 text-left md:text-left">
-              What Does Fortuna Mean?
-            </h2>
-
-            <div className="w-16 h-1 bg-[var(--brand-gold)] mt-2 mb-6 md:mx-0 mx-auto"></div>
-
+            <div className="text-center">
+              <h2 className="text-2xl md:text-4xl font-bold ">About Us</h2>
+              <p className="italic text-[var(--brand-gray)] mb-3">
+                "Be wise. Be disciplined. Build your luck."
+              </p>
+            </div>
+            {/* <div className="w-16 h-1 bg-[var(--brand-gold)] mt-2 mb-6 md:mx-0 mx-auto"></div> */}
             <p className="mb-4 text-left md:text-left">
               <strong>Fortuna</strong> is the ancient Roman goddess of
               <strong> prosperity, destiny, and good fortune</strong>—a timeless
@@ -60,9 +57,19 @@ const OurPhilosophy = () => {
               strategy.
             </p>
 
-            <p className="font-semibold text-left md:text-left">
+            <p className="text-left md:text-left mb-4">
               <strong>Fortuna:</strong> Where wisdom meets wealth, and
               preparation creates prosperity.
+            </p>
+
+            <p className="mb-4 text-left md:text-left">
+              At <strong>Fortuna Wealth Management,</strong> we are dedicated to
+              helping you build a healthy and mindful relationship with money.
+              Our comprehensive services cover end-to-end money management and
+              investment solutions designed to help you spend wisely, save
+              strategically, and invest purposefully. Acting as your lifelong
+              partner in financial growth, we guide you on the journey towards
+              financial independence and long-term wealth creation.
             </p>
           </div>
         </div>

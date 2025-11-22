@@ -125,9 +125,9 @@ export default function RecommendedMovies() {
   return (
     <section className="bg-[var(--brand-light)] py-12">
       <div
-        data-aos="zoom-out-down"
-        data-aos-easing="linear"
-        data-aos-duration="1500"
+        // data-aos="zoom-out-down"
+        // data-aos-easing="linear"
+        // data-aos-duration="1500"
         className="text-center flex flex-col items-center relative rounded-xl transition-all duration-300"
       >
         <h2 className="text-2xl md:text-4xl font-bold text-[var(--brand-dark)]">
