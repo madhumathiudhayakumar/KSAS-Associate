@@ -8,9 +8,7 @@ import {
 
 const AboutUsSection = () => {
   return (
-    <section className="relative bg-[var(--brand-dark)] text-[var(--brand-light)] py-16 overflow-hidden">
-      {/* Background diagonal shape */}
-      <div className="absolute inset-0 bg-[var(--brand-dark)] transform -skew-y-3 origin-top-left"></div>
+    <section className="relative bg-[var(--brand-dark)] text-[var(--brand-light)] py-10 overflow-hidden">
 
       {/* Content */}
       <div

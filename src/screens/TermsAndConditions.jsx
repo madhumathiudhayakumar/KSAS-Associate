@@ -36,7 +36,7 @@ const TermsAndCondition = () => {
       </section> */}
 
         {/* ======= Main Content ======= */}
-        <section className="py-16 px-6 md:px-20 lg:px-32">
+        <section className="mt-30 mb-20 px-4 md:px-8 lg:px-16">
           <div 
             // data-aos="fade-up"
             // data-aos-easing="linear"

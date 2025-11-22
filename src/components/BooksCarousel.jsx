@@ -132,7 +132,7 @@ const BooksCarousel = () => {
               bottom: 0 !important;
             }
             .swiper-pagination-bullet {
-              background: #fff !important;
+              background: gray !important;
               opacity: 1 !important;
             }
             .swiper-pagination-bullet-active {

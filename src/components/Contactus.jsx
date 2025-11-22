@@ -201,27 +201,6 @@ const Contactus = () => {
                     WhatsApp
                   </a>
 
-                  <a
-                    href="#map"
-                    className="
-          w-12 h-12 rounded-lg bg-[rgba(255,255,255,0.1)]
-          border border-[rgba(255,255,255,0.06)] 
-          flex items-center justify-center
-        "
-                  >
-                    <svg
-                      className="w-5 h-5 text-[var(--brand-light)]"
-                      viewBox="0 0 24 24"
-                      fill="none"
-                    >
-                      <path
-                        d="M12 2C8.686 2 6 4.686 6 8c0 5.25 6 12 6 12s6-6.75 6-12c0-3.314-2.686-6-6-6z"
-                        stroke="currentColor"
-                        strokeWidth="1.25"
-                      />
-                      <circle cx="12" cy="8" r="2" fill="currentColor" />
-                    </svg>
-                  </a>
                 </div>
               </div>
             </div>

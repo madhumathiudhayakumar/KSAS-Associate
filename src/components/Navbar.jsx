@@ -9,8 +9,9 @@ import logo from "../assets/logo.png";
 const navLinks = [
   { name: "Home", href: "#header" },
   { name: "About Us", href: "#aboutus" },
-  { name: "Services", href: "#services" },
   { name: "About Me", href: "#aboutme" },
+  { name: "Services", href: "#services" },
+  { name: "Privacy Policy", href: "/privacy-policy" },
   { name: "Terms & Conditions", href: "/terms-condition" },
   { name: "Contact Us", href: "#contactus" },
 ];
