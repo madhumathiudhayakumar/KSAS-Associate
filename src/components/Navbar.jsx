@@ -44,9 +44,7 @@ const Navbar = () => {
   return (
     <>
       <nav className="fixed w-full bg-[var(--brand-light)] shadow-sm  top-0 left-0 z-50">
-        {location?.pathname !== "/privacy-policy" &&
-          location?.pathname !== "/terms-condition" &&
-          location.pathname !== "/application-form" && <AutoScrollHeader />}
+        <AutoScrollHeader />
         <div className="max-w-7xl mx-auto flex items-center justify-between">
           {/* Logo Section */}
           {/* <div className="flex items-center gap-2">

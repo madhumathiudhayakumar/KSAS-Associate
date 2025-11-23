@@ -200,7 +200,6 @@ const Contactus = () => {
                   >
                     WhatsApp
                   </a>
-
                 </div>
               </div>
             </div>
@@ -265,9 +264,14 @@ const Contactus = () => {
                       <option value="" disabled>
                         Select Service
                       </option>
-                      <option className="text-black">Mutual Fund</option>
-                      <option className="text-black">Financial Planner</option>
-                      <option className="text-black">Tax Planning</option>
+                      <option className="text-black">Equity</option>
+                      <option className="text-black">F&O</option>
+                      <option className="text-black">Mutual Fund </option>
+                      <option className="text-black">
+                        Insurance ( Term, Health, Motor.etc )
+                      </option>
+                      <option className="text-black">Bonds</option>
+                      <option className="text-black">Others</option>
                     </select>
 
                     <textarea

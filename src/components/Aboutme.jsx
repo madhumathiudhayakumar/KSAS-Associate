@@ -19,7 +19,7 @@ const AboutMe = () => {
         <div className="w-14 h-1 bg-[var(--brand-gold)] mx-auto mt-2 mb-6 rounded-full"></div>
 
         {/* --- Top Section --- */}
-        <div className="container mx-auto grid grid-cols-1 md:grid-cols-[auto_1fr] gap-20 items-start px-4 md:px-6">
+        <div className="container mx-auto grid grid-cols-1 md:grid-cols-[auto_1fr] gap-2 items-start px-4 md:px-6">
           {/* LEFT — IMAGE */}
           <div className="flex flex-col items-center md:items-center mt-10">
             <img
@@ -49,7 +49,7 @@ const AboutMe = () => {
           </div>
 
           {/* RIGHT — DETAILS */}
-          <div className="text-left">
+          <div className="text-center md:text-left">
             {/* Bullet Points Section */}
             <div className="mt-6 text-[var(--brand-light)] leading-relaxed">
               <ul className="space-y-4 text-left">

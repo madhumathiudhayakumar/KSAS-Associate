@@ -41,7 +41,7 @@ const PrivacyPolicy = () => {
       </section> */}
 
         {/* ======= Main Content ======= */}
-        <section className="mt-30 mb-20 px-4 md:px-8 lg:px-16">
+        <section className="mt-40 mb-20 px-4 md:px-8 lg:px-16">
           <div 
             // data-aos="fade-up"
             // data-aos-easing="linear"
