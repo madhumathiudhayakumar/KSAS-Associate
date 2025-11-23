@@ -41,7 +41,7 @@ const OurPhilosophy = () => {
             </p>
 
             <p className="mb-4 text-left md:text-left">
-              At <strong>Fortuna Wealth Management</strong>, my goal is to
+              At <strong>Fortuna Wealth Management</strong>, our goal is to
               provide clear, practical, and personalized financial planning. We
               embrace this philosophy. We believe that{" "}
               <strong>
@@ -52,7 +52,7 @@ const OurPhilosophy = () => {
             </p>
 
             <p className="mb-4 text-left md:text-left">
-              Like the guidance of the goddess herself, my approach helps you
+              Like the guidance of the goddess herself, our approach helps you
               navigate your financial journey with confidence, purpose, and
               strategy.
             </p>
