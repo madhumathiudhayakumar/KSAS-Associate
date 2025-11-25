@@ -116,7 +116,7 @@ const Contactus = () => {
                 <div className="relative z-10">
                   {/* Header Section */}
                   <div className="flex items-center gap-4">
-                    <div className="h-24 w-24 rounded-full bg-red overflow-hidden border-4 border-[var(--brand-gold)] shadow-[0_0_12px_rgba(215,154,106,0.6)]">
+                    <div className="h-24 w-20 rounded-full bg-red overflow-hidden  shadow-[0_0_12px_rgba(215,154,106,0.6)]">
                       <img
                         src={ownerImage}
                         alt="avatar"
@@ -191,11 +191,10 @@ const Contactus = () => {
                     target="_blank"
                     className="
           flex-1 inline-flex items-center justify-center gap-2 
-          bg-gradient-to-r from-[#d79a6a] to-[#b86f48] 
+          bg-[var(--brand-gold)]
           text-[var(--brand-light)]
           py-3 rounded-lg font-semibold 
-          shadow-[0_0_12px_rgba(215,154,106,0.5)]
-          hover:opacity-95 transition
+          hover:bg-[var(--brand-gold-dark)]
         "
                   >
                     WhatsApp
@@ -287,10 +286,10 @@ const Contactus = () => {
                     <button
                       type="submit"
                       disabled={loading}
-                      className="w-full mt-4 bg-gradient-to-r from-[#d79a6a] to-[#b86f48] text-white font-semibold px-6 py-3 rounded-lg shadow hover:shadow-md transition"
+                      className="w-full mt-4 bg-[var(--brand-gold)] text-[var(--brand-light)] font-semibold px-6 py-3 rounded-lg hover:bg-[var(--brand-gold-dark)] cursor-pointer flex justify-center items-center"
                     >
                       {loading ? (
-                        <span className="w-5 h-5 border-2 border-white border-t-transparent rounded-full animate-spin mx-auto" />
+                        <span className="w-5 h-5 border-2 border-[var(--brand-light)] border-t-transparent rounded-full animate-spin mx-auto" />
                       ) : (
                         "Submit Request"
                       )}
