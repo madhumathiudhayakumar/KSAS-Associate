@@ -22,9 +22,9 @@ const Contactus = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    const serviceID = "service_kzhssal";
-    const templateID = "template_6bh6ysj";
-    const publicKey = "4m8p-p-kTmfG9R_Ue";
+    const serviceID = "service_16do2qd";
+    const templateID = "template_b4mu60l";
+    const publicKey = "sGu-fOKmy5CJVkFOa";
 
     const templateParams = {
       name: contactData.name,
@@ -231,9 +231,8 @@ const Contactus = () => {
                       onChange={handleChange}
                       placeholder="Mobile"
                       required
-                      className={`w-full rounded-lg px-4 py-3 bg-white/5 border ${
-                        errors.mobile ? "border-red-500" : "border-white/10"
-                      } text-white focus:ring-2 focus:ring-[var(--brand-gold)]`}
+                      className={`w-full rounded-lg px-4 py-3 bg-white/5 border ${errors.mobile ? "border-red-500" : "border-white/10"
+                        } text-white focus:ring-2 focus:ring-[var(--brand-gold)]`}
                     />
                     {errors.mobile && (
                       <p className="text-xs text-red-400">{errors.mobile}</p>
@@ -245,9 +244,8 @@ const Contactus = () => {
                       onChange={handleChange}
                       placeholder="Email address"
                       required
-                      className={`w-full rounded-lg px-4 py-3 bg-white/5 border ${
-                        errors.email ? "border-red-500" : "border-white/10"
-                      } text-white focus:ring-2 focus:ring-[var(--brand-gold)]`}
+                      className={`w-full rounded-lg px-4 py-3 bg-white/5 border ${errors.email ? "border-red-500" : "border-white/10"
+                        } text-white focus:ring-2 focus:ring-[var(--brand-gold)]`}
                     />
                     {errors.email && (
                       <p className="text-xs text-red-400">{errors.email}</p>
