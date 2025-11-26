@@ -1,6 +1,6 @@
 import React from "react";
 import { BsSunFill } from "react-icons/bs";
-import ownerImage from "../assets/owner.jpg";
+import ownerImage from "../assets/owner-img.jpg"
 
 const AboutMe = () => {
   return (

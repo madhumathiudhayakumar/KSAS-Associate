@@ -3,7 +3,7 @@ import React, { useState } from "react";
 import emailjs from "@emailjs/browser";
 import ContactImage from "../assets/contact-image.jpeg";
 import { AiFillCheckCircle } from "react-icons/ai";
-import ownerImage from "../assets/owner.jpg"
+import ownerImage from "../assets/owner-img.jpg";
 
 const Contactus = () => {
   const [contactData, setContactData] = useState({});
