@@ -95,10 +95,10 @@ const Navbar = () => {
       py-2 px-4
       cursor-pointer
       transition-all"
-                onClick={() => (window.location.href = "tel:+919080391749")}
+                 onClick={() => window.open("https://wa.me/918248947995", "_blank")}
               >
                 <IoLogoWhatsapp className="text-green-500 text-xl" />
-                <span className="font-medium">+91 9080391749</span>
+                <span className="font-medium">+91 8248947995</span>
               </div>
             </li>
           </ul>

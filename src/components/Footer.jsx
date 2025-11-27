@@ -141,7 +141,7 @@ const Footer = () => {
           {/* Right side social icons */}
           <div className="flex justify-center sm:justify-end gap-4">
             <a
-              href="https://wa.me/919080391749"
+              href="https://wa.me/918248947995"
               target="_blank"
               className="bg-gray-800 p-2 rounded hover:bg-[var(--brand-gold)] transition"
             >

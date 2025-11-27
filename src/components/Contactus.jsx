@@ -145,12 +145,12 @@ const Contactus = () => {
                       Mobile / WhatsApp
                     </div>
                     <a
-                      href="https://wa.me/919080391749"
+                      href="https://wa.me/918248947995"
                       target="_blank"
                       rel="noreferrer"
                       className="inline-flex items-center gap-2 mt-1 text-[var(--brand-gold)] font-semibold"
                     >
-                      +91 90803 91749
+                      +91  8248947995
                     </a>
                   </div>
 
@@ -187,7 +187,7 @@ const Contactus = () => {
                 {/* Buttons */}
                 <div className="relative z-10 flex gap-3">
                   <a
-                    href="https://wa.me/919080391749"
+                    href="https://wa.me/918248947995"
                     target="_blank"
                     className="
           flex-1 inline-flex items-center justify-center gap-2 
