@@ -36,7 +36,7 @@ const AboutMe = () => {
                 <span>M.Com</span>
               </div> */}
 
-              <div className="flex justify-between border-b border-[var(--brand-gold)] pb-0.5">
+              <div className="flex justify-between pb-0.5">
                 <span className="font-semibold">Experience</span>
                 <span>20+ years</span>
               </div>

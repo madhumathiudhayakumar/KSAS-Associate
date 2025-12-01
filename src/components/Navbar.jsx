@@ -13,7 +13,8 @@ const navLinks = [
   { name: "Services", href: "#services" },
   { name: "Privacy Policy", href: "/privacy-policy" },
   { name: "Terms & Conditions", href: "/terms-condition" },
-  { name: "Blogs", href: "#blogs" },
+  { name: "Blogs", href: "/blogs" },
+  // { name: "Resources", href: "/resources" },
   { name: "Contact Us", href: "#contactus" },
 ];
 
@@ -62,7 +63,17 @@ const Navbar = () => {
           </div> */}
 
           {/* Desktop Nav Links */}
-          <ul className="hidden md:flex items-center space-x-6 lg:space-x-10 text-[var(--brand-dark)] font-medium text-sm lg:text-base">
+          <ul className="
+  hidden sm:flex 
+  flex-wrap 
+  items-center 
+  justify-center 
+  gap-3 sm:gap-4 lg:gap-6
+  text-[var(--brand-dark)] 
+  font-medium 
+  text-xs sm:text-sm lg:text-base
+  px-2
+">
             {navLinks.map((link) => {
               const isSectionLink = link.href.startsWith("#");
 

@@ -101,6 +101,23 @@ const PrivacyPolicy = () => {
               </div>
             ))}
 
+              <h2 className="text-2xl font-bold text-[var(--brand-dark)] mt-10 mb-3">
+              1. Financial Safety Guidelines
+            </h2>
+            <ul className="space-y-3">
+              {[
+                "Do not share any OTP (One-Time Password) received through phone calls or messages with anyone.",
+                "Verify the authenticity of any links received via WhatsApp groups or individual WhatsApp messages before clicking them.",
+                "Any investment promising to double your money in a short period is not safe. Avoid such fraudulent offers.",
+                "Invest only in companies or institutions that are officially approved and regulated by the Government.",
+              ].map((item, i) => (
+                <li key={i} className="flex items-start gap-3">
+                  <BsSunFill className="w-5 h-5 text-[var(--brand-gold)] mt-1" />
+                  <span>{item}</span>
+                </li>
+              ))}
+            </ul>
+
             <h2 className="text-2xl font-bold text-[var(--brand-dark)] mt-10 mb-3">
               2. How We Use Your Information
             </h2>

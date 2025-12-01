@@ -8,6 +8,7 @@ import Footer from "../components/Footer";
 import TermsAndCondition from "../screens/TermsAndConditions";
 import Blogs from "../screens/BlogDetail";
 import AllUsefullResources from "../screens/AllUsefullResources";
+import UsefullResources from "../components/UsefullResources";
 // import ClientContactForm from "../ClientForm/ClientContactForm";
 
 const AppRoutes = () => {
@@ -21,7 +22,7 @@ const AppRoutes = () => {
           <Route path="/terms-condition" element={<TermsAndCondition />} />
           <Route path="/privacy-policy" element={<PrivacyPolicy />} />
           <Route path="/blogs" element={<Blogs />} />
-          <Route path="/resources" element={<AllUsefullResources/>}/>
+          <Route path="/resources" element={<UsefullResources/>}/>
           {/* </main> */}
         </Routes>
         <Footer />

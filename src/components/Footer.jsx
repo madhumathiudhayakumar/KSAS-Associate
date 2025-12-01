@@ -61,7 +61,7 @@ const Footer = () => {
           ))}
         </ul> */}
 
-        <hr className="border-[var(--brand-light)] mb-8" />
+        {/* <hr className="border-[var(--brand-light)] mb-8" /> */}
 
         {/* Description Section */}
         <div className="px-4 md:px-8 pb-8">
