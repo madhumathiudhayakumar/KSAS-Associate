@@ -42,12 +42,13 @@ const HomeScreen = () => {
       {/* <section>
         <TedTalks />
       </section> */}
+            <section id="bookscarousel" className="scroll-mt-24">
+        <BooksCarousel />
+      </section>
       <section id="contactus" className="scroll-mt-24">
         <Contactus />
       </section>
-      <section id="bookscarousel" className="scroll-mt-24">
-        <BooksCarousel />
-      </section>
+
       {/* <section id="blogs" className="scroll-mt-24">
         <Blogs />
       </section> */}

@@ -7,7 +7,6 @@ import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
 import TermsAndCondition from "../screens/TermsAndConditions";
 import Blogs from "../screens/BlogDetail";
-import AllUsefullResources from "../screens/AllUsefullResources";
 import UsefullResources from "../components/UsefullResources";
 // import ClientContactForm from "../ClientForm/ClientContactForm";
 
