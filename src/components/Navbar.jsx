@@ -14,7 +14,7 @@ const navLinks = [
   { name: "Privacy Policy", href: "/privacy-policy" },
   { name: "Terms & Conditions", href: "/terms-condition" },
   { name: "Blogs", href: "/blogs" },
-  // { name: "Resources", href: "/resources" },
+  { name: "Resources", href: "/resources" },
   { name: "Contact Us", href: "#contactus" },
 ];
 
