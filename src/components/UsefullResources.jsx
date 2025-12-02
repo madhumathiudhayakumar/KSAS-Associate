@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import ResourceLinks from "../StaticData/UsefullResourcesData"
 import { useNavigate } from 'react-router-dom';
 import { FaChevronDown, FaChevronUp } from "react-icons/fa";
@@ -30,6 +30,10 @@ const UsefullResources = () => {
   const filteredLinks = selectedCategory
     ? ResourceLinks.filter(item => item.cattegory === selectedCategory)
     : ResourceLinks;
+
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
   return (
     <div>
       <ScrollToTopButton />
