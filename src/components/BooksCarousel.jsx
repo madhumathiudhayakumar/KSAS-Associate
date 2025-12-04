@@ -70,7 +70,7 @@ const books = [
 
 const BooksCarousel = () => {
   return (
-    <section className="relative py-16 bg-gradient-to-br from-[var(--brand-light)] via-white to-[var(--brand-light)] overflow-hidden">
+    <section className="relative py-16 bg-[var(--brand-dark)] via-white to-[var(--brand-light)] overflow-hidden">
       {/* Soft Background Glow */}
       <div className="absolute inset-0 -z-10 opacity-40">
         <div className="absolute top-10 left-10 w-40 h-40 bg-[var(--brand-gold)] blur-3xl opacity-20 rounded-full"></div>
@@ -78,7 +78,7 @@ const BooksCarousel = () => {
       </div>
 
       {/* Quote */}
-      <p className="text-center text-[var(--brand-dark)] text-lg italic mb-4 px-4">
+      <p className="text-center text-[var(--brand-light)] text-lg italic mb-4 px-4">
         “An investment in knowledge pays the best interest.”
       </p>
       <p className="text-center text-[var(--brand-gold)] text-sm tracking-wide mb-8">
@@ -86,7 +86,7 @@ const BooksCarousel = () => {
       </p>
 
       {/* Heading */}
-      <h2 className="text-center text-[var(--brand-dark)] text-3xl md:text-4xl font-bold drop-shadow-sm">
+      <h2 className="text-center text-[var(--brand-light)] text-3xl md:text-4xl font-bold drop-shadow-sm">
         RECOMMENDED BOOKS
       </h2>
 
@@ -110,7 +110,7 @@ const BooksCarousel = () => {
           >
             {books.map((book, index) => (
               <SwiperSlide key={index} className="h-auto">
-                <div className="rounded-xl p-2 backdrop-blur-md bg-[rgba(255,255,255,0.15)] border border-[var(--brand-gold)] hover:shadow-[0_0_20px_var(--brand-gold)] transition-all duration-500 text-center flex flex-col items-center justify-between h-full">
+                <div className="rounded-xl p-2 backdrop-blur-md bg-[var(--brand-light)]  hover:shadow-[0_0_20px_var(--brand-gold)] transition-all duration-500 text-center flex flex-col items-center justify-between h-full">
                   {/* Book Cover */}
                   <img
                     src={book.img}

@@ -85,12 +85,12 @@ const Contactus = () => {
 
       <section
         id="contact"
-        className="bg-[var(--brand-dark)] text-[var(--brand-light)] py-20"
+        className="bg-[var(--brand-light)] text-[var(--brand-dark)] py-20"
       >
         <div className="container mx-auto px-6">
           {/* Heading */}
           <div className="text-center mb-10">
-            <h2 className="text-3xl md:text-4xl font-extrabold tracking-tight relative inline-block">
+            <h2 className="text-3xl md:text-4xl font-bold tracking-tight relative inline-block">
               <span className="relative z-10">CONTACT US</span>
               <span
                 className="absolute left-1/2 transform -translate-x-1/2 -bottom-6 w-48 h-12 rounded-full opacity-10 blur-lg"
@@ -108,9 +108,9 @@ const Contactus = () => {
             {/* LEFT — PROFILE CARD */}
             {/* PROFILE / IMAGE (left) */}
             <div className="flex flex-col h-full">
-              <div className="w-full h-full rounded-2xl p-6 backdrop-blur-md bg-[rgba(255,255,255,0.03)] border border-[rgba(255,255,255,0.06)] relative ">
+              <div className="w-full h-full rounded-2xl p-6 backdrop-blur-md bg-[var(--brand-light)] border border-[var(--brand-gold)] relative ">
                 {/* ✨ Gold Outer Glow */}
-                <div className="absolute inset-0 rounded-2xl bg-gradient-to-br from-[rgba(215,154,106,0.25)] to-transparent blur-2xl opacity-40 pointer-events-none"></div>
+                <div className="absolute inset-0 rounded-2xl  blur-2xl opacity-40 pointer-events-none"></div>
 
                 {/* Profile Content */}
                 <div className="relative z-10">
@@ -125,15 +125,15 @@ const Contactus = () => {
                     </div>
 
                     <div>
-                      <h3 className="text-xl font-semibold text-[var(--brand-light)]">
+                      <h3 className="text-xl font-semibold text-[var(--brand-dark)]">
                         S. Kalimuthu, M.Com
                       </h3>
-                      <p className="text-sm text-gray-300">Financial Advisor</p>
+                      <p className="text-sm text-[var(--brand-gray)]">Financial Advisor</p>
                     </div>
                   </div>
 
                   {/* Address */}
-                  <div className="mt-5 text-sm text-gray-300 space-y-1">
+                  <div className="mt-5 text-sm text-[var(--brand-gray)] space-y-1">
                     <p>Lakshmana Perumal Kovil Street</p>
                     <p>Rajapalayam – 626 117, Tamil Nadu</p>
                     <p>India</p>
@@ -141,7 +141,7 @@ const Contactus = () => {
 
                   {/* Contact */}
                   <div className="mt-5">
-                    <div className="text-xs text-gray-400">
+                    <div className="text-xs text-[var(--brand-gray)]">
                       Mobile / WhatsApp
                     </div>
                     <a
@@ -156,11 +156,11 @@ const Contactus = () => {
 
                   {/* Timings */}
                   <div className="mt-5">
-                    <div className="text-xs text-gray-400">Office Timings</div>
-                    <div className="text-gray-300">
+                    <div className="text-xs text-[var(--brand-gray)]">Office Timings</div>
+                    <div className="text-[var(--brand-gray)]">
                       Mon–Sat: 9:00 AM — 6:00 PM IST
                     </div>
-                    <p className="mt-1 text-gray-400 italic text-xs">
+                    <p className="mt-1 text-[var(--brand-gray)] italic text-xs">
                       For other timezones, send a WhatsApp message to schedule
                       the meeting accordingly.
                     </p>
@@ -171,12 +171,12 @@ const Contactus = () => {
                   className="
         relative z-10 
         bg-[rgba(255,255,255,0.08)] 
-        border border-[rgba(215,154,106,0.3)] 
+        border border-[var(--brand-gold)] 
         rounded-xl p-4 mt-6 
         shadow-inner
       "
                 >
-                  <p className="text-sm italic text-[var(--brand-light)] leading-relaxed text-center">
+                  <p className="text-sm italic text-[var(--brand-dark)] leading-relaxed text-center">
                     “Great financial decisions are built through smart planning,
                     discipline, and the right guidance.”
                   </p>
@@ -205,12 +205,12 @@ const Contactus = () => {
 
             {/* RIGHT — FORM */}
             <div className="flex">
-              <div className="w-full h-full rounded-2xl p-6 backdrop-blur-md bg-[rgba(255,255,255,0.03)] border border-[rgba(255,255,255,0.06)] relative">
-                <div className="absolute inset-0 rounded-2xl bg-gradient-to-br from-[rgba(215,154,106,0.25)] to-transparent blur-2xl opacity-40 pointer-events-none"></div>
+              <div className="w-full h-full rounded-2xl p-6 backdrop-blur-md bg-[var(--brand-light)] border border-[var(--brand-gold)] relative">
+                <div className="absolute inset-0 rounded-2xl  blur-2xl opacity-40 pointer-events-none"></div>
 
                 <div>
                   <h3 className="text-2xl font-semibold mb-2">Get in touch</h3>
-                  <p className="text-sm text-gray-300 mb-4">
+                  <p className="text-sm text-[var(--brand-gray)] mb-4">
                     Leave your details and we will contact you to schedule a
                     meeting.
                   </p>
@@ -222,7 +222,7 @@ const Contactus = () => {
                       onChange={handleChange}
                       placeholder="Full name"
                       required
-                      className="w-full rounded-lg px-4 py-3 bg-white/5 border border-white/10 text-white focus:ring-2 focus:ring-[var(--brand-gold)]"
+                      className="w-full rounded-lg px-4 py-3 bg-white/5 border border-[var(--brand-gray-light)] text-[var(--brand-dark)] focus:ring-2 focus:ring-[var(--brand-gold)]"
                     />
 
                     <input
@@ -231,8 +231,8 @@ const Contactus = () => {
                       onChange={handleChange}
                       placeholder="Mobile"
                       required
-                      className={`w-full rounded-lg px-4 py-3 bg-white/5 border ${errors.mobile ? "border-red-500" : "border-white/10"
-                        } text-white focus:ring-2 focus:ring-[var(--brand-gold)]`}
+                      className={`w-full rounded-lg px-4 py-3 bg-white/5 border ${errors.mobile ? "border-red-500" : "border-[var(--brand-gray-light)]"
+                        } text-[var(--brand-dark)] focus:ring-2 focus:ring-[var(--brand-gold)]`}
                     />
                     {errors.mobile && (
                       <p className="text-xs text-red-400">{errors.mobile}</p>
@@ -244,8 +244,8 @@ const Contactus = () => {
                       onChange={handleChange}
                       placeholder="Email address"
                       required
-                      className={`w-full rounded-lg px-4 py-3 bg-white/5 border ${errors.email ? "border-red-500" : "border-white/10"
-                        } text-white focus:ring-2 focus:ring-[var(--brand-gold)]`}
+                      className={`w-full rounded-lg px-4 py-3 bg-white/5 border ${errors.email ? "border-red-500" : "border-[var(--brand-gray-light)]"
+                        } text-[var(--brand-dark)] focus:ring-2 focus:ring-[var(--brand-gold)]`}
                     />
                     {errors.email && (
                       <p className="text-xs text-red-400">{errors.email}</p>
@@ -256,7 +256,7 @@ const Contactus = () => {
                       value={contactData.service || ""}
                       onChange={handleChange}
                       required
-                      className="w-full rounded-lg px-4 py-3 bg-white/5 border border-white/10 text-white focus:ring-2 focus:ring-[var(--brand-gold)]"
+                      className="w-full rounded-lg px-4 py-3 bg-white/5 border border-[var(--brand-gray-light)] text-[var(--brand-dark)] focus:ring-2 focus:ring-[var(--brand-gold)]"
                     >
                       <option value="" disabled>
                         Select Service
@@ -278,7 +278,7 @@ const Contactus = () => {
                       placeholder="Message"
                       rows={4}
                       required
-                      className="w-full rounded-lg px-4 py-3 bg-white/5 border border-white/10 text-white focus:ring-2 focus:ring-[var(--brand-gold)]"
+                      className="w-full rounded-lg px-4 py-3 bg-white/5 border border-[var(--brand-gray-light)] text-[var(--brand-dark)] focus:ring-2 focus:ring-[var(--brand-gold)]"
                     />
 
                     <button
@@ -295,7 +295,7 @@ const Contactus = () => {
                   </form>
                 </div>
 
-                <div className="mt-4 text-xs text-gray-400">
+                <div className="mt-4 text-xs text-[var(--brand-gray)]">
                   We respect your privacy — contact details are used only to
                   schedule and follow up.
                 </div>

@@ -39,9 +39,9 @@ const UsefullResources = () => {
       <ScrollToTopButton />
       <div className="bg-[var(--brand-light)] text-[var(--brand-dark)]">
         <section className="mt-40 mb-20 px-4 md:px-8 lg:px-16">
-          <blockquote className="text-3xl font-bold text-[var(--brand-dark)] mb-6 border-l-4 border-[var(--brand-gold)] pl-4">
+          {/* <blockquote className="text-3xl font-bold text-[var(--brand-dark)] mb-6 border-l-4 border-[var(--brand-gold)] pl-4">
             Important Note
-          </blockquote>
+          </blockquote> */}
 
           <p className="text-[var(--brand-dark)] mb-4">
             The YouTube videos embedded on this website are sourced directly from their
@@ -78,10 +78,10 @@ const UsefullResources = () => {
             All users are strongly advised to consult a SEBI-registered financial advisor
             before making any investment decisions.
           </p>
-          <blockquote className="text-xl font-semibold text-[var(--brand-dark)] mb-6 border-l-4 border-[var(--brand-gold)] pl-4">
+          <blockquote className="text-md text-[var(--brand-dark)] mb-6">
             Copyright Attribution :
           </blockquote>
-          <p className="text-[var(--brand-dark)] mb-6 italic font-bold">
+          <p className="text-[var(--brand-dark)] mb-6 italic ">
             “Video content belongs to the original YouTube Channel Owner. Used here via
             official YouTube embed for educational and informational purposes only.”
           </p>

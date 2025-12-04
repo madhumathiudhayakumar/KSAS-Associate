@@ -32,7 +32,7 @@ const Footer = () => {
   };
 
   return (
-    <div className="mt-15">
+    // <div className="mt-15">
     <footer className="bg-[var(--brand-gray-dark)] text-[var(--brand-gray-light)] pt-10 ">
       <div className="bg-[var(--brand-gray-dark)] max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
         <div className="flex justify-center mb-6">
@@ -173,7 +173,7 @@ const Footer = () => {
         </div>
       </div>
     </footer>
-    </div>
+    // </div>
   );
 };
 
