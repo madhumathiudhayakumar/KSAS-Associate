@@ -217,6 +217,7 @@ const Contactus = () => {
 
                   <form className="space-y-4" onSubmit={handleSubmit}>
                     <input
+                      type="text"
                       name="name"
                       value={contactData.name || ""}
                       onChange={handleChange}
@@ -226,26 +227,36 @@ const Contactus = () => {
                     />
 
                     <input
+                      type="tel"
                       name="mobile"
                       value={contactData.mobile || ""}
                       onChange={handleChange}
                       placeholder="Mobile"
                       required
                       className={`w-full rounded-lg px-4 py-3 bg-white/5 border ${errors.mobile ? "border-red-500" : "border-[var(--brand-gray-light)]"
-                        } text-[var(--brand-dark)] focus:ring-2 focus:ring-[var(--brand-gold)]`}
+                        } text-[var(--brand-dark)]
+                        ${!errors.mobile && "focus:ring-1 focus:ring-[var(--brand-gold)] focus:border-[var(--brand-gold)]"}
+                        ${errors.mobile && "focus:ring-1 focus:ring-red-400 focus:border-red-500"}
+                        focus:outline-none
+                         `}
                     />
                     {errors.mobile && (
                       <p className="text-xs text-red-400">{errors.mobile}</p>
                     )}
 
                     <input
+                      type="email"
                       name="email"
                       value={contactData.email || ""}
                       onChange={handleChange}
                       placeholder="Email address"
                       required
                       className={`w-full rounded-lg px-4 py-3 bg-white/5 border ${errors.email ? "border-red-500" : "border-[var(--brand-gray-light)]"
-                        } text-[var(--brand-dark)] focus:ring-2 focus:ring-[var(--brand-gold)]`}
+                        } text-[var(--brand-dark)] 
+                      ${!errors.email && "focus:ring-1 focus:ring-[var(--brand-gold)] focus:border-[var(--brand-gold)]"}
+                      ${errors.email && "focus:ring-1 focus:ring-red-400 focus:border-red-500"}
+                       focus:outline-none 
+                        `}
                     />
                     {errors.email && (
                       <p className="text-xs text-red-400">{errors.email}</p>
