@@ -27,3 +27,7 @@ html {
   opacity: 0;
   transform: translateX(60px);
 }
+
+input, textarea, select {
+  outline: none !important;
+}

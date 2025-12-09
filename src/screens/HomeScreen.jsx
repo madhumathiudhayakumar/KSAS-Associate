@@ -12,6 +12,7 @@ import OurPhilosophy from "../components/OurPhilosophy";
 import RecommendedMovies from "../components/RecommedndedMovies";
 import TedTalks from "../components/TedTalks";
 import RecommendedDocumentaries from "../components/Documentaries";
+import UsefullResources from "../components/UsefullResources";
 
 const HomeScreen = () => {
   return (
@@ -41,12 +42,19 @@ const HomeScreen = () => {
       {/* <section>
         <TedTalks />
       </section> */}
+            <section id="bookscarousel" className="scroll-mt-24">
+        <BooksCarousel />
+      </section>
       <section id="contactus" className="scroll-mt-24">
         <Contactus />
       </section>
-      <section id="bookscarousel" className="scroll-mt-24">
-        <BooksCarousel />
-      </section>
+
+      {/* <section id="blogs" className="scroll-mt-24">
+        <Blogs />
+      </section> */}
+      {/* <section id="usefullresources" className="scroll-mt-24">
+        <UsefullResources />
+      </section> */}
       {/* <section id="services" className="scroll-mt-24">
         <RecommendedDocumentaries />
       </section> */}
