@@ -45,25 +45,29 @@ const Navbar = () => {
 
   return (
     <>
-      <nav className="fixed w-full bg-[var(--brand-light)] shadow-sm  top-0 left-0 z-50">
+      <div className="fixed top-0 left-0 w-full z-50">
         <AutoScrollHeader />
-        <div className="max-w-7xl mx-auto flex items-center justify-between">
+      </div>
+
+      <nav className="fixed w-full bg-[var(--brand-light)] shadow-sm top-8 left-0 z-40">
+        <div className="w-full px-4 flex items-center justify-between">
           {/* Logo Section */}
           {/* <div className="flex items-center gap-2">
             <div className="flex items-center space-x-2 px-4 py-2"> */}
-          <div className="rounded-full w-25 h-25 flex items-center justify-center">
+          <div className="w-25 h-25 rounded-full flex items-center justify-center">
             <img
               src={logo}
               alt="Logo"
-              className="w-34 h-34 object-contain rounded-full p-2 cursor-pointer"
-              onClick={() => handleNavClick("#header")}
+              className="w-25 h-25 object-contain rounded-full p-2 cursor-pointer"
             />
           </div>
+
           {/* </div>
           </div> */}
 
           {/* Desktop Nav Links */}
-          <ul className="
+          <ul
+            className="
   hidden sm:flex 
   flex-wrap 
   items-center 
@@ -73,7 +77,8 @@ const Navbar = () => {
   font-medium 
   text-xs sm:text-sm lg:text-base
   px-2
-">
+"
+          >
             {navLinks.map((link) => {
               const isSectionLink = link.href.startsWith("#");
 
@@ -85,10 +90,11 @@ const Navbar = () => {
                   <Link
                     to={isSectionLink ? "/" : link.href}
                     onClick={() => handleNavClick(link.href)}
-                    className={`transition-colors duration-200 ${isActive
-                      ? "text-[var(--brand-gold)] font-semibold"
-                      : "hover:text-[var(--brand-gold-dark)]"
-                      }`}
+                    className={`transition-colors duration-200 ${
+                      isActive
+                        ? "text-[var(--brand-gold)] font-semibold"
+                        : "hover:text-[var(--brand-gold-dark)]"
+                    }`}
                   >
                     {link.name}
                   </Link>
@@ -106,7 +112,9 @@ const Navbar = () => {
       py-2 px-4
       cursor-pointer
       transition-all"
-                onClick={() => window.open("https://wa.me/918248947995", "_blank")}
+                onClick={() =>
+                  window.open("https://wa.me/918248947995", "_blank")
+                }
               >
                 <IoLogoWhatsapp className="text-green-500 text-xl" />
                 <span className="font-medium">+91 8248947995</span>
@@ -115,10 +123,7 @@ const Navbar = () => {
           </ul>
 
           {/* Mobile Menu Icon */}
-          <div className="flex md:hidden items-center gap-3">
-            {/* <button className="bg-[#af8a4a] hover:bg-[#af8a4a] text-white font-semibold px-3 py-2 rounded text-sm">
-              Portfolio Login
-            </button> */}
+          <div className="flex sm:hidden items-center gap-3">
             <button onClick={() => setIsMenuOpen(true)}>
               <Bars3Icon className="h-6 w-6 text-[var(--brand-dark)]" />
             </button>
@@ -151,10 +156,11 @@ const Navbar = () => {
                     <Link
                       to={isSectionLink ? "/" : link.href}
                       onClick={() => handleNavClick(link.href)}
-                      className={`transition-colors duration-200 ${isActive
-                        ? "text-[var(--brand-gold)] font-semibold"
-                        : "hover:text-[var(--brand-gold-dark)]"
-                        }`}
+                      className={`transition-colors duration-200 ${
+                        isActive
+                          ? "text-[var(--brand-gold)] font-semibold"
+                          : "hover:text-[var(--brand-gold-dark)]"
+                      }`}
                     >
                       {link.name}
                     </Link>

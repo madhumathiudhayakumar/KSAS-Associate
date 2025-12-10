@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React, { useEffect, useRef, useState } from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Autoplay } from "swiper/modules";
 import { FaArrowUp, FaArrowDown } from "react-icons/fa";
@@ -7,14 +7,22 @@ import "swiper/css";
 
 const AutoScrollHeader = () => {
   const [rateData, setRateData] = useState([]);
+  const isFetchingRef = useRef(false);
 
   const fetchApi = async () => {
+    if (isFetchingRef.current) return; // ⛔ block parallel calls
+
+    isFetchingRef.current = true;
     try {
-      const response = await fetch('https://www.redvisionweb.com/api/open-apis/tickers?apikey=fc1017dad92f3bbbd9cee9bc21d4b0e0');
+      const response = await fetch(
+        "https://www.redvisionweb.com/api/open-apis/tickers?apikey=fc1017dad92f3bbbd9cee9bc21d4b0e0"
+      );
       const data = await response.json();
-      setRateData(data?.data || [])
+      setRateData(data?.data || []);
     } catch (error) {
-      console.error('Error fetching data:', error);
+      console.error("Error fetching data:", error);
+    } finally {
+      isFetchingRef.current = false; // mark as completed
     }
   };
 
@@ -25,67 +33,75 @@ const AutoScrollHeader = () => {
     }, 5000);
 
     return () => clearInterval(interval);
-  }, [])
+  }, []);
 
   return (
-    <div className="w-full bg-[var(--brand-dark)] text-[var(--brand-light)] py-2 overflow-hidden">
+    <>
       {rateData.length > 0 && (
-        <Swiper
-          modules={[Autoplay]}
-          slidesPerView="auto"
-          spaceBetween={20}
-          loop={true}
-          speed={2000}        // smooth continuous
-          autoplay={{
-            delay: 1000,
-            disableOnInteraction: false,
-          }}
-        >
-          {rateData.map((item, index) => {
-            // Determine if index increased or decreased
-            const isPositive = item.diff_amount >= 0;
+        <div className="w-full bg-[var(--brand-dark)] text-[var(--brand-light)] py-2 overflow-hidden z-[60] relative">
+          <Swiper
+            modules={[Autoplay]}
+            slidesPerView="auto"
+            spaceBetween={20}
+            loop={true}
+            speed={2000} // smooth continuous
+            autoplay={{
+              delay: 1000,
+              disableOnInteraction: false,
+            }}
+          >
+            {rateData.map((item, index) => {
+              // Determine if index increased or decreased
+              const isPositive = item.diff_amount >= 0;
 
-            // Format the figure with commas
-            const formattedFigure = Number(item.figure).toLocaleString("en-IN", {
-              minimumFractionDigits: 2,
-              maximumFractionDigits: 2,
-            });
+              // Format the figure with commas
+              const formattedFigure = Number(item.figure).toLocaleString(
+                "en-IN",
+                {
+                  minimumFractionDigits: 2,
+                  maximumFractionDigits: 2,
+                }
+              );
 
-            return (
-              <SwiperSlide
-                key={index}
-                className="!w-auto px-6 flex items-center border-r border-[var(--brand-light)] h-full"
-              >
-                <div className="flex items-center gap-2 whitespace-nowrap">
-                  {/* Index name */}
-                  <span className="text-sm font-bold">{item.indexName}</span>
+              return (
+                <SwiperSlide
+                  key={index}
+                  // className="!w-auto px-6 flex items-center h-full"
+                  className="!w-auto px-6 flex items-center border-r border-[var(--brand-light)] h-full"
+                >
+                  <div className="flex items-center gap-2 whitespace-nowrap">
+                    {/* Index name */}
+                    <span className="text-sm font-bold">{item.indexName}</span>
 
-                  {/* Figure with comma */}
-                  <span className="text-sm">{formattedFigure}</span>
+                    {/* Figure with comma */}
+                    <span className="text-sm">{formattedFigure}</span>
 
-                  {/* Difference and Arrow */}
-                  <span
-                    className={`flex items-center gap-1 text-sm font-bold ${isPositive ? "text-green-500" : "text-red-500"
+                    {/* Difference and Arrow */}
+                    <span
+                      className={`flex items-center gap-1 text-sm font-bold ${
+                        isPositive ? "text-green-500" : "text-red-500"
                       }`}
-                  >
-                    {isPositive ? <FaArrowUp /> : <FaArrowDown />}
-                    {Math.abs(item.diff_amount).toLocaleString("en-IN")}
-                  </span>
+                    >
+                      {isPositive ? <FaArrowUp /> : <FaArrowDown />}
+                      {Math.abs(item.diff_amount).toLocaleString("en-IN")}
+                    </span>
 
-                  {/* Percentage */}
-                  <span
-                    className={`text-sm ${isPositive ? "text-green-500" : "text-red-500"
+                    {/* Percentage */}
+                    <span
+                      className={`text-sm ${
+                        isPositive ? "text-green-500" : "text-red-500"
                       }`}
-                  >
-                    ({Math.abs(item.percentage)}%)
-                  </span>
-                </div>
-              </SwiperSlide>
-            );
-          })}
-        </Swiper>
+                    >
+                      ({Math.abs(item.percentage)}%)
+                    </span>
+                  </div>
+                </SwiperSlide>
+              );
+            })}
+          </Swiper>
+        </div>
       )}
-    </div>
+    </>
   );
 };
 

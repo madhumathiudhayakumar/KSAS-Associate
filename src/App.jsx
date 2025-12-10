@@ -1,8 +1,8 @@
-import { useEffect } from 'react';
-import AppRoutes from './AppRoutes/AppRoutes'
+import { useEffect } from "react";
+import AppRoutes from "./AppRoutes/AppRoutes";
 // import AOS from "aos";
 
-import './App.css'
+import "./App.css";
 import "aos/dist/aos.css";
 
 function App() {
@@ -15,10 +15,10 @@ function App() {
   // }, []);
 
   return (
-    <>
-    <AppRoutes/>
-    </>
-  )
+    <div className="overflow-x-hidden">
+      <AppRoutes />
+    </div>
+  );
 }
 
-export default App
+export default App;

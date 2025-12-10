@@ -127,6 +127,12 @@ const ResourceLinks = [
     link: "https://www.youtube.com/watch?v=7CHbX_YK73w",
     cattegory: "Power of Habits",
   },
+  {
+    title:
+      "₹1,000 SIP for 30 Years = ₹1.30 Crore! The Secret Every Indian Must Know",
+    link: "https://www.youtube.com/watch?v=9_Ha7vBmyOY",
+    cattegory: "Mutual Funds",
+  },
 ];
 
 export default ResourceLinks;

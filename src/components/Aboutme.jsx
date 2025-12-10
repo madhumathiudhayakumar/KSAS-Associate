@@ -1,6 +1,6 @@
 import React from "react";
 import { BsSunFill } from "react-icons/bs";
-import ownerImage from "../assets/owner-img.jpg"
+import ownerImage from "../assets/owner-img.jpg";
 
 const AboutMe = () => {
   return (
@@ -36,7 +36,7 @@ const AboutMe = () => {
                 <span>M.Com</span>
               </div> */}
 
-              <div className="flex justify-between pb-0.5">
+              <div className="flex flex-col sm:flex-row sm:justify-between pb-0.5">
                 <span className="font-semibold">Experience</span>
                 <span>20+ years</span>
               </div>
