@@ -1,7 +1,7 @@
 import React, { useEffect } from "react";
 import ScrollToTopButton from "../components/ScrollToTopButton";
 import { BsSunFill } from "react-icons/bs";
-import { blog } from "../assets/blog.jpg";
+import  blog  from "../assets/blog.jpg";
 
 const BlogDeail = () => {
   useEffect(() => {
