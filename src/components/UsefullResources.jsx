@@ -43,48 +43,7 @@ const UsefullResources = () => {
             Important Note
           </blockquote> */}
 
-          <p className="text-[var(--brand-dark)] mb-4">
-            The YouTube videos embedded on this website are sourced directly from their
-            respective official YouTube channels. All rights, trademarks, and ownership
-            of the video content remain solely with the original creators. We do not upload,
-            modify, or host any copyrighted content on our servers.
-          </p>
-          <p className="text-[var(--brand-dark)] mb-4">
-            Any views, strategies, or product recommendations mentioned in the videos
-            are solely those of the respective creators and are not endorsed by us.                    </p>
-          <p className="text-[var(--brand-dark)] mb-4">
-            Investment in the securities market is subject to market risks. <strong>Read all
-              scheme-related documents carefully</strong> before investing. Past performance does
-            not guarantee future results.
-          </p>
-          <p className="text-[var(--brand-dark)] mb-4">
-            We are <strong>not registered with SEBI</strong> as a financial advisor, research analyst,
-            or intermediary. Therefore, nothing on this website should be construed as:
-          </p>
 
-          <ul className="space-y-3">
-            {[
-              "A recommendation to buy, sell, or hold any securities",
-              "Investment research or a personalized investment advisory service",
-              "A guarantee of future returns",
-            ].map((item, i) => (
-              <li key={i} className="flex items-start gap-3 pl-4">
-                <BsSunFill className="w-5 h-5 text-[var(--brand-gold)] mt-1 flex-shrink-0" />
-                <span>{item}</span>
-              </li>
-            ))}
-          </ul>
-          <p className="text-[var(--brand-dark)] mb-6 mt-4">
-            All users are strongly advised to consult a SEBI-registered financial advisor
-            before making any investment decisions.
-          </p>
-          <blockquote className="text-md text-[var(--brand-dark)] mb-6">
-            Copyright Attribution :
-          </blockquote>
-          <p className="text-[var(--brand-dark)] mb-6 italic ">
-            “Video content belongs to the original YouTube Channel Owner. Used here via
-            official YouTube embed for educational and informational purposes only.”
-          </p>
           <blockquote className="text-xl font-semibold text-[var(--brand-dark)] mb-6 border-l-4 border-[var(--brand-gold)] pl-4">
             Browse by Category
           </blockquote>
@@ -107,7 +66,7 @@ const UsefullResources = () => {
             </div>
           }
 
-          <div className="container mx-auto px-4">
+          <div className="container mx-auto px-4 mb-8">
             <div className="relative overflow-x-auto scrollbar-hide">
               <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 place-items-center">
                 {filteredLinks.map((item, index) => (
@@ -160,6 +119,48 @@ const UsefullResources = () => {
               </div>
             </div>
           </div>
+                    <p className="text-[var(--brand-dark)] mb-4">
+            The YouTube videos embedded on this website are sourced directly from their
+            respective official YouTube channels. All rights, trademarks, and ownership
+            of the video content remain solely with the original creators. We do not upload,
+            modify, or host any copyrighted content on our servers.
+          </p>
+          <p className="text-[var(--brand-dark)] mb-4">
+            Any views, strategies, or product recommendations mentioned in the videos
+            are solely those of the respective creators and are not endorsed by us.                    </p>
+          <p className="text-[var(--brand-dark)] mb-4">
+            Investment in the securities market is subject to market risks. <strong>Read all
+              scheme-related documents carefully</strong> before investing. Past performance does
+            not guarantee future results.
+          </p>
+          <p className="text-[var(--brand-dark)] mb-4">
+            We are <strong>not registered with SEBI</strong> as a financial advisor, research analyst,
+            or intermediary. Therefore, nothing on this website should be construed as:
+          </p>
+
+          <ul className="space-y-3">
+            {[
+              "A recommendation to buy, sell, or hold any securities",
+              "Investment research or a personalized investment advisory service",
+              "A guarantee of future returns",
+            ].map((item, i) => (
+              <li key={i} className="flex items-start gap-3 pl-4">
+                <BsSunFill className="w-5 h-5 text-[var(--brand-gold)] mt-1 flex-shrink-0" />
+                <span>{item}</span>
+              </li>
+            ))}
+          </ul>
+          <p className="text-[var(--brand-dark)] mb-6 mt-4">
+            All users are strongly advised to consult a SEBI-registered financial advisor
+            before making any investment decisions.
+          </p>
+          <blockquote className="text-md text-[var(--brand-dark)] mb-6">
+            Copyright Attribution :
+          </blockquote>
+          <p className="text-[var(--brand-dark)] mb-6 italic ">
+            “Video content belongs to the original YouTube Channel Owner. Used here via
+            official YouTube embed for educational and informational purposes only.”
+          </p>
         </section>
       </div>
     </div>
